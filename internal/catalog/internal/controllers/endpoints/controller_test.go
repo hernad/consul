@@ -120,6 +120,7 @@ func TestWorkloadToEndpoint(t *testing.T) {
 			// the protocol is wrong here so it will not show up in the endpoints.
 			"grpc": {Port: 9090, Protocol: pbcatalog.Protocol_PROTOCOL_HTTP2},
 		},
+		Identity: "test-identity",
 	}
 
 	data := &workloadData{
@@ -143,6 +144,7 @@ func TestWorkloadToEndpoint(t *testing.T) {
 		// that we can properly determine the health status and the overall
 		// controller tests will prove that the integration works as expected.
 		HealthStatus: pbcatalog.Health_HEALTH_CRITICAL,
+		Identity:     workload.Identity,
 	}
 
 	prototest.AssertDeepEqual(t, expected, workloadToEndpoint(service, data))
@@ -627,6 +629,7 @@ func (suite *controllerSuite) TestController() {
 			"http": {Port: 8080, Protocol: pbcatalog.Protocol_PROTOCOL_HTTP},
 		},
 		HealthStatus: pbcatalog.Health_HEALTH_CRITICAL,
+		Identity:     "api",
 	})
 
 	// Update the health status of the workload
@@ -658,6 +661,7 @@ func (suite *controllerSuite) TestController() {
 			"http": {Port: 8080, Protocol: pbcatalog.Protocol_PROTOCOL_HTTP},
 		},
 		HealthStatus: pbcatalog.Health_HEALTH_PASSING,
+		Identity:     "api",
 	})
 
 	// rewrite the service to add more selection criteria. This should trigger
@@ -709,6 +713,7 @@ func (suite *controllerSuite) TestController() {
 			"grpc": {Port: 8081, Protocol: pbcatalog.Protocol_PROTOCOL_GRPC},
 		},
 		HealthStatus: pbcatalog.Health_HEALTH_PASSING,
+		Identity:     "api",
 	})
 
 	// Delete the endpoints. The controller should bring these back momentarily
