@@ -23,6 +23,11 @@ import (
 	"github.com/hashicorp/consul/proto-public/pbresource"
 )
 
+const (
+	HeaderConsulToken     = "x-consul-token"
+	HeaderConsistencyMode = "x-consul-consistency-mode"
+)
+
 func NewHandler(
 	client pbresource.ResourceServiceClient,
 	registry resource.Registry,
@@ -30,8 +35,12 @@ func NewHandler(
 	logger hclog.Logger) http.Handler {
 	mux := http.NewServeMux()
 	for _, t := range registry.Types() {
-		// Individual Resource Endpoints.
-		prefix := strings.ToLower(fmt.Sprintf("/%s/%s/%s/", t.Type.Group, t.Type.GroupVersion, t.Type.Kind))
+		// List Endpoint
+		base := strings.ToLower(fmt.Sprintf("/%s/%s/%s", t.Type.Group, t.Type.GroupVersion, t.Type.Kind))
+		mux.Handle(base, http.StripPrefix(base, &listHandler{t, client, parseToken, logger}))
+
+		// Individual Resource Endpoints
+		prefix := strings.ToLower(fmt.Sprintf("%s/", base))
 		logger.Info("Registered resource endpoint", "endpoint", prefix)
 		mux.Handle(prefix, http.StripPrefix(prefix, &resourceHandler{t, client, parseToken, logger}))
 	}
@@ -55,7 +64,7 @@ type resourceHandler struct {
 func (h *resourceHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	var token string
 	h.parseToken(r, &token)
-	ctx := metadata.AppendToOutgoingContext(r.Context(), "x-consul-token", token)
+	ctx := metadata.AppendToOutgoingContext(r.Context(), HeaderConsulToken, token)
 	switch r.Method {
 	case http.MethodPut:
 		h.handleWrite(w, r, ctx)
@@ -88,23 +97,23 @@ func (h *resourceHandler) handleWrite(w http.ResponseWriter, r *http.Request, ct
 		return
 	}
 
-	tenancyInfo, resourceName, version := parseParams(r)
+	tenancyInfo, queryParams := parseParams(r)
 
 	rsp, err := h.client.Write(ctx, &pbresource.WriteRequest{
 		Resource: &pbresource.Resource{
 			Id: &pbresource.ID{
 				Type:    h.reg.Type,
 				Tenancy: tenancyInfo,
-				Name:    resourceName,
+				Name:    queryParams["resourceName"],
 			},
 			Owner:    req.Owner,
-			Version:  version,
+			Version:  queryParams["version"],
 			Metadata: req.Metadata,
 			Data:     anyProtoMsg,
 		},
 	})
 	if err != nil {
-		handleResponseError(err, w, h)
+		handleResponseError(err, w, h.logger)
 		return
 	}
 
@@ -117,20 +126,28 @@ func (h *resourceHandler) handleWrite(w http.ResponseWriter, r *http.Request, ct
 	w.Write(output)
 }
 
-func parseParams(r *http.Request) (tenancy *pbresource.Tenancy, resourceName string, version string) {
+func parseParams(r *http.Request) (tenancy *pbresource.Tenancy, queryParams map[string]string) {
 	params := r.URL.Query()
 	tenancy = &pbresource.Tenancy{
 		Partition: params.Get("partition"),
 		PeerName:  params.Get("peer_name"),
 		Namespace: params.Get("namespace"),
 	}
-	resourceName = path.Base(r.URL.Path)
+	resourceName := path.Base(r.URL.Path)
 	if resourceName == "." || resourceName == "/" {
 		resourceName = ""
 	}
-	version = params.Get("version")
 
-	return
+	queryParams = make(map[string]string)
+	queryParams["resourceName"] = resourceName
+	queryParams["version"] = params.Get("version")
+	queryParams["namePrefix"] = params.Get("name_prefix")
+
+	if params.Has("consistent") {
+		queryParams["consistent"] = "true"
+	}
+
+	return tenancy, queryParams
 }
 
 func jsonMarshal(res *pbresource.Resource) ([]byte, error) {
@@ -148,47 +165,101 @@ func jsonMarshal(res *pbresource.Resource) ([]byte, error) {
 	return json.MarshalIndent(stuff, "", "  ")
 }
 
-func handleResponseError(err error, w http.ResponseWriter, h *resourceHandler) {
+func handleResponseError(err error, w http.ResponseWriter, logger hclog.Logger) {
 	if e, ok := status.FromError(err); ok {
 		switch e.Code() {
 		case codes.InvalidArgument:
 			w.WriteHeader(http.StatusBadRequest)
-			h.logger.Info("User has mal-formed request", "error", err)
+			logger.Info("User has mal-formed request", "error", err)
 		case codes.NotFound:
 			w.WriteHeader(http.StatusNotFound)
-			h.logger.Info("Received error from resource service: Not found", "error", err)
+			logger.Info("Received error from resource service: Not found", "error", err)
 		case codes.PermissionDenied:
 			w.WriteHeader(http.StatusForbidden)
-			h.logger.Info("Received error from resource service: User not authenticated", "error", err)
+			logger.Info("Received error from resource service: User not authenticated", "error", err)
 		case codes.Aborted:
 			w.WriteHeader(http.StatusConflict)
-			h.logger.Info("Received error from resource service: the request conflict with the current state of the target resource", "error", err)
+			logger.Info("Received error from resource service: the request conflict with the current state of the target resource", "error", err)
 		default:
 			w.WriteHeader(http.StatusInternalServerError)
-			h.logger.Error("Received error from resource service", "error", err)
+			logger.Error("Received error from resource service", "error", err)
 		}
 	} else {
 		w.WriteHeader(http.StatusInternalServerError)
-		h.logger.Error("Received error from resource service: not able to parse error returned", "error", err)
+		logger.Error("Received error from resource service: not able to parse error returned", "error", err)
 	}
 	w.Write([]byte(err.Error()))
 }
 
 // Note: The HTTP endpoints do not accept UID since it is quite unlikely that the user will have access to it
 func (h *resourceHandler) handleDelete(w http.ResponseWriter, r *http.Request, ctx context.Context) {
-	tenancyInfo, resourceName, version := parseParams(r)
+	tenancyInfo, queryParams := parseParams(r)
 	_, err := h.client.Delete(ctx, &pbresource.DeleteRequest{
 		Id: &pbresource.ID{
 			Type:    h.reg.Type,
 			Tenancy: tenancyInfo,
-			Name:    resourceName,
+			Name:    queryParams["resourceName"],
 		},
-		Version: version,
+		Version: queryParams["version"],
 	})
 	if err != nil {
-		handleResponseError(err, w, h)
+		handleResponseError(err, w, h.logger)
 		return
 	}
 	w.WriteHeader(http.StatusNoContent)
 	w.Write([]byte("{}"))
+}
+
+type listHandler struct {
+	reg        resource.Registration
+	client     pbresource.ResourceServiceClient
+	parseToken func(req *http.Request, token *string)
+	logger     hclog.Logger
+}
+
+func (h *listHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodGet {
+		w.WriteHeader(http.StatusMethodNotAllowed)
+		return
+	}
+
+	var token string
+	h.parseToken(r, &token)
+	ctx := metadata.AppendToOutgoingContext(r.Context(), HeaderConsulToken, token)
+
+	tenancyInfo, queryParams := parseParams(r)
+	if queryParams["consistent"] == "true" {
+		ctx = metadata.AppendToOutgoingContext(ctx, HeaderConsistencyMode, "consistent")
+	}
+
+	rsp, err := h.client.List(ctx, &pbresource.ListRequest{
+		Type:       h.reg.Type,
+		Tenancy:    tenancyInfo,
+		NamePrefix: queryParams["namePrefix"],
+	})
+	if err != nil {
+		handleResponseError(err, w, h.logger)
+		return
+	}
+
+	output := make([]json.RawMessage, len(rsp.Resources))
+	for idx, res := range rsp.Resources {
+		b, err := jsonMarshal(res)
+		if err != nil {
+			w.WriteHeader(http.StatusInternalServerError)
+			h.logger.Error("Failed to unmarshal GRPC resource response", "error", err)
+			return
+		}
+		output[idx] = b
+	}
+
+	b, err := json.MarshalIndent(struct {
+		Resources []json.RawMessage `json:"resources"`
+	}{output}, "", "  ")
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		h.logger.Error("Failed to correcty format the list response", "error", err)
+		return
+	}
+	w.Write(b)
 }
