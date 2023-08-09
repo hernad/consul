@@ -31,14 +31,6 @@ func (d *DecodedResource[V, PV]) GetResource() *pbresource.Resource {
 	return d.Resource
 }
 
-func (d *DecodedResource[V, PV]) GetData() PV {
-	if d == nil {
-		return nil
-	}
-
-	return d.Data
-}
-
 // Decode will generically decode the provided resource into a 2-field
 // structure that holds onto the original Resource and the decoded contents.
 //

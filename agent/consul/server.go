@@ -19,9 +19,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hashicorp/consul/internal/resource"
-
 	"github.com/armon/go-metrics"
+	"github.com/hashicorp/consul-net-rpc/net/rpc"
 	"github.com/hashicorp/go-connlimit"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-memdb"
@@ -37,8 +36,6 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/reflection"
-
-	"github.com/hashicorp/consul-net-rpc/net/rpc"
 
 	"github.com/hashicorp/consul/acl"
 	"github.com/hashicorp/consul/acl/resolver"
@@ -75,6 +72,8 @@ import (
 	"github.com/hashicorp/consul/agent/token"
 	"github.com/hashicorp/consul/internal/catalog"
 	"github.com/hashicorp/consul/internal/controller"
+	"github.com/hashicorp/consul/internal/mesh"
+	"github.com/hashicorp/consul/internal/resource"
 	"github.com/hashicorp/consul/internal/resource/demo"
 	"github.com/hashicorp/consul/internal/resource/reaper"
 	raftstorage "github.com/hashicorp/consul/internal/storage/raft"
@@ -876,6 +875,7 @@ func NewServer(config *Config, flat Deps, externalGRPCServer *grpc.Server, incom
 func (s *Server) registerControllers(deps Deps) {
 	if stringslice.Contains(deps.Experiments, catalogResourceExperimentName) {
 		catalog.RegisterControllers(s.controllerManager, catalog.DefaultControllerDependencies())
+		mesh.RegisterControllers(s.controllerManager, mesh.DefaultControllerDependencies())
 	}
 
 	reaper.RegisterControllers(s.controllerManager)
