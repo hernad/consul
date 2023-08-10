@@ -483,11 +483,10 @@ func makeTestCluster(t *testing.T, snap *proxycfg.ConfigSnapshot, fixtureName st
 			TransportSocket: xdsNewUpstreamTransportSocket(t, snap, dbSNI, dbURI),
 		}
 		typedExtensionProtocolOptions := &envoy_upstreams_v3.HttpProtocolOptions{
-			UpstreamProtocolOptions: &envoy_upstreams_v3.HttpProtocolOptions_ExplicitHttpConfig_{
-				ExplicitHttpConfig: &envoy_upstreams_v3.HttpProtocolOptions_ExplicitHttpConfig{
-					ProtocolConfig: &envoy_upstreams_v3.HttpProtocolOptions_ExplicitHttpConfig_Http2ProtocolOptions{
-						Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{},
-					},
+			UpstreamProtocolOptions: &envoy_upstreams_v3.HttpProtocolOptions_UseDownstreamProtocolConfig{
+				UseDownstreamProtocolConfig: &envoy_upstreams_v3.HttpProtocolOptions_UseDownstreamHttpConfig{
+					HttpProtocolOptions:  &envoy_core_v3.Http1ProtocolOptions{},
+					Http2ProtocolOptions: &envoy_core_v3.Http2ProtocolOptions{},
 				},
 			},
 		}
