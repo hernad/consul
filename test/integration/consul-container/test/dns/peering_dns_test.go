@@ -68,10 +68,13 @@ func TestDNS_PeeringDNSTest(t *testing.T) {
 	// Create test service in each DC
 	// call mapped port for clients with dig or DNS client
 	partition := "default"
-	dc1 := "dc1"
-	dc2 := "dc2"
-	peer1 := fmt.Sprintf("peer-%s-%s", dc1, partition)
-	peer2 := fmt.Sprintf("peer-%s-%s", dc2, partition)
+	//dc1 := "dc1"
+	//dc2 := "dc2"
+	//peer1 := fmt.Sprintf("peer-%s-%s", dc1, partition)
+	//peer2 := fmt.Sprintf("peer-%s-%s", dc2, partition)
+
+	peer1 := libtopology.AcceptingPeerName
+	peer2 := libtopology.DialingPeerName
 
 	c1Proxy := createServices(t, cluster1, peer1)
 	_, c1port := c1Proxy.GetAddr()
@@ -136,7 +139,7 @@ func TestDNS_PeeringDNSTest(t *testing.T) {
 	_, _, err = cluster2Client.ConfigEntries().Set(&req, nil)
 	require.NoError(t, err)
 
-	dnsPort, err := nat.NewPort("tcp", "8600")
+	dnsPort, err := nat.NewPort("udp", "8600")
 	require.NoError(t, err)
 
 	client1Container := cluster1.Agents[0].GetPod()
@@ -185,7 +188,7 @@ func createServices(t *testing.T, cluster *libcluster.Cluster, peerName string) 
 
 func mutualDNSCheck(t *testing.T, cluster1Port, cluster2Port nat.Port) (bool, bool) {
 	m := new(dns.Msg)
-	m.SetQuestion("static-server.service.peer-dc2-default.peer.consul", dns.TypeSRV)
+	m.SetQuestion("static-server.service.peer-dc2-default.peer.consul.", dns.TypeSRV)
 
 	c := new(dns.Client)
 
@@ -194,7 +197,7 @@ func mutualDNSCheck(t *testing.T, cluster1Port, cluster2Port nat.Port) (bool, bo
 	require.NoError(t, err)
 
 	m = new(dns.Msg)
-	m.SetQuestion("static-server.service.peer-dc1-default.peer.consul", dns.TypeSRV)
+	m.SetQuestion("static-server.service.peer-dc1-default.peer.consul.", dns.TypeSRV)
 
 	addr2 := fmt.Sprintf("127.0.0.1:%d", cluster2Port.Int())
 	reply2, _, err := c.Exchange(m, addr2)
