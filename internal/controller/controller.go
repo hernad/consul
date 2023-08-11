@@ -52,7 +52,9 @@ func (c *controllerRunner) run(ctx context.Context) error {
 
 		// Mapper Queue → Mapper → Reconciliation Queue
 		group.Go(func() error {
-			return c.runMapper(groupCtx, watch, mapQueue, recQueue)
+			return c.runMapper(groupCtx, watch, mapQueue, recQueue, func(ctx context.Context, runtime Runtime, itemType queue.ItemType) ([]Request, error) {
+				return watch.mapper(ctx, runtime, itemType.(mapperRequest).res)
+			})
 		})
 	}
 
@@ -68,7 +70,9 @@ func (c *controllerRunner) run(ctx context.Context) error {
 
 		// Mapper Queue → Mapper → Reconciliation Queue
 		group.Go(func() error {
-			return c.runCustomMapper(groupCtx, customWatch, customMapQueue, recQueue)
+			return c.runCustomMapper(groupCtx, customWatch, customMapQueue, recQueue, func(ctx context.Context, runtime Runtime, itemType queue.ItemType) ([]Request, error) {
+				return customWatch.mapper(ctx, runtime, itemType.(Event))
+			})
 		})
 	}
 
@@ -114,6 +118,7 @@ func (c *controllerRunner) runMapper(
 	w watch,
 	from queue.WorkQueue[mapperRequest],
 	to queue.WorkQueue[Request],
+	mapper func(ctx context.Context, runtime Runtime, itemType queue.ItemType) ([]Request, error),
 ) error {
 	logger := c.logger.With("watched_resource_type", resource.ToGVK(w.watchedType))
 
@@ -123,27 +128,10 @@ func (c *controllerRunner) runMapper(
 			return nil
 		}
 
-		var reqs []Request
-		err := c.handlePanic(func() error {
-			var err error
-			reqs, err = w.mapper(ctx, c.runtime(), item.res)
-			return err
-		})
-		if err != nil {
+		if err := c.doMap(ctx, mapper, to, item, logger); err != nil {
 			from.AddRateLimited(item)
 			from.Done(item)
 			continue
-		}
-
-		for _, r := range reqs {
-			if !resource.EqualType(r.ID.Type, c.ctrl.managedType) {
-				logger.Error("dependency mapper returned request for a resource of the wrong type",
-					"type_expected", resource.ToGVK(c.ctrl.managedType),
-					"type_got", resource.ToGVK(r.ID.Type),
-				)
-				continue
-			}
-			to.Add(r)
 		}
 
 		from.Forget(item)
@@ -156,6 +144,7 @@ func (c *controllerRunner) runCustomMapper(
 	w customWatch,
 	from queue.WorkQueue[Event],
 	to queue.WorkQueue[Request],
+	mapper func(ctx context.Context, runtime Runtime, itemType queue.ItemType) ([]Request, error),
 ) error {
 	logger := c.logger.With("watched_event", w.source)
 
@@ -165,32 +154,38 @@ func (c *controllerRunner) runCustomMapper(
 			return nil
 		}
 
-		var reqs []Request
-		err := c.handlePanic(func() error {
-			var err error
-			reqs, err = w.mapper(ctx, c.runtime(), item)
-			return err
-		})
-		if err != nil {
+		if err := c.doMap(ctx, mapper, to, item, logger); err != nil {
 			from.AddRateLimited(item)
 			from.Done(item)
 			continue
 		}
 
-		for _, r := range reqs {
-			if !resource.EqualType(r.ID.Type, c.ctrl.managedType) {
-				logger.Error("dependency mapper returned request for a resource of the wrong type",
-					"type_expected", resource.ToGVK(c.ctrl.managedType),
-					"type_got", resource.ToGVK(r.ID.Type),
-				)
-				continue
-			}
-			to.Add(r)
-		}
-
 		from.Forget(item)
 		from.Done(item)
 	}
+}
+
+func (c *controllerRunner) doMap(ctx context.Context, mapper func(ctx context.Context, runtime Runtime, itemType queue.ItemType) ([]Request, error), to queue.WorkQueue[Request], item queue.ItemType, logger hclog.Logger) error {
+	var reqs []Request
+	if err := c.handlePanic(func() error {
+		var err error
+		reqs, err = mapper(ctx, c.runtime(), item)
+		return err
+	}); err != nil {
+		return err
+	}
+
+	for _, r := range reqs {
+		if !resource.EqualType(r.ID.Type, c.ctrl.managedType) {
+			logger.Error("dependency mapper returned request for a resource of the wrong type",
+				"type_expected", resource.ToGVK(c.ctrl.managedType),
+				"type_got", resource.ToGVK(r.ID.Type),
+			)
+			continue
+		}
+		to.Add(r)
+	}
+	return nil
 }
 
 func (c *controllerRunner) runReconciler(ctx context.Context, queue queue.WorkQueue[Request]) error {
