@@ -191,6 +191,8 @@ func compile(logger hclog.Logger, raw *Config, prev *Topology) (*Topology, error
 					exposePort(8503)
 				} else {
 					exposePort(8502)
+					// Used in DNS integration tests
+					exposePort(8600)
 				}
 			}
 

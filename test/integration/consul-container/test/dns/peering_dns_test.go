@@ -2,6 +2,7 @@ package dns
 
 import (
 	"fmt"
+	"strconv"
 	"testing"
 
 	"github.com/docker/go-connections/nat"
@@ -9,9 +10,6 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/hashicorp/consul/api"
-	libassert "github.com/hashicorp/consul/test/integration/consul-container/libs/assert"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
 	"github.com/hashicorp/consul/testing/deployer/sprawl/sprawltest"
 	"github.com/hashicorp/consul/testing/deployer/topology"
 )
@@ -165,63 +163,21 @@ func TestDNS_PeeringDNSTest(t *testing.T) {
 	// launch clusters
 	sp := sprawltest.Launch(t, cfg)
 	clu1 := sp.Topology().Clusters["dc1"]
-	//clu2 := sp.Topology().Clusters["dc2"]
+	clu2 := sp.Topology().Clusters["dc2"]
 
-	//cluster1Client, err := sp.APIClientForNode("dc1", clu1.FirstClient().ID(), "")
-	//require.NoError(t, err)
-	//
-	//cluster2Client, err := sp.APIClientForNode("dc2", clu2.FirstClient().ID(), "")
-	//require.NoError(t, err)
+	client1DNSPortNum := clu1.FirstClient().ExposedPort(8600)
+	client2DNSPortNum := clu2.FirstClient().ExposedPort(8600)
 
-	port := clu1.FirstClient().ExposedPort(8600)
-
-	print(port)
-
-	//dnsPort, err := nat.NewPort("udp", "8600")
-	//require.NoError(t, err)
-	//
-	//client1Container := cluster1.Agents[0].GetPod()
-	//client1MappedDNS, err := client1Container.MappedPort(context.Background(), dnsPort)
-	//require.NoError(t, err)
-	//
-	//client2Container := cluster2.Agents[0].GetPod()
-	//client2MappedDNS, err := client2Container.MappedPort(context.Background(), dnsPort)
-	//
-	//t1, t2 := mutualDNSCheck(t, client1MappedDNS, client2MappedDNS)
-	//require.True(t, t1 && t2)
-
-	// Need to make DNS request on 8600 to client
-	// probably via the sidecar?
-
-	// Don't need to test full suite of DNS just lookup the service in the other cluster from both sides
-
-}
-
-func createServices(t *testing.T, cluster *libcluster.Cluster, peerName string) *libservice.ConnectContainer {
-	node := cluster.Agents[0]
-	client := node.GetClient()
-	// Create a service and proxy instance
-	serviceOpts := &libservice.ServiceOpts{
-		Name:     libservice.StaticServerServiceName,
-		ID:       "static-server",
-		HTTPPort: 8080,
-		GRPCPort: 8079,
-	}
-
-	// Create a service and proxy instance
-	_, _, err := libservice.CreateAndRegisterStaticServerAndSidecar(node, serviceOpts)
+	client1DNSPort, err := nat.NewPort("udp", strconv.Itoa(client1DNSPortNum))
 	require.NoError(t, err)
 
-	libassert.CatalogServiceExists(t, client, "static-server-sidecar-proxy", nil)
-	libassert.CatalogServiceExists(t, client, libservice.StaticServerServiceName, nil)
-
-	// Create a client proxy instance with the server as an upstream
-	clientConnectProxy, err := libservice.CreateAndRegisterStaticClientSidecar(node, "", false, false)
+	client2DNSPort, err := nat.NewPort("udp", strconv.Itoa(client2DNSPortNum))
 	require.NoError(t, err)
 
-	libassert.CatalogServiceExists(t, client, "static-client-sidecar-proxy", nil)
+	t1, t2 := mutualDNSCheck(t, client1DNSPort, client2DNSPort)
+	require.True(t, t1 && t2)
 
-	return clientConnectProxy
+	// TODO: Adjust token configurations for test cases
 }
 
 func mutualDNSCheck(t *testing.T, cluster1Port, cluster2Port nat.Port) (bool, bool) {
