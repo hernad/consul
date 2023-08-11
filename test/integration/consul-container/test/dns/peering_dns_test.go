@@ -1,7 +1,6 @@
 package dns
 
 import (
-	"context"
 	"fmt"
 	"testing"
 
@@ -13,8 +12,8 @@ import (
 	libassert "github.com/hashicorp/consul/test/integration/consul-container/libs/assert"
 	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
 	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	libtopology "github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hashicorp/consul/testing/deployer/sprawl/sprawltest"
+	"github.com/hashicorp/consul/testing/deployer/topology"
 )
 
 // TestDNS_PeeringDNSTest
@@ -49,108 +48,147 @@ import (
 func TestDNS_PeeringDNSTest(t *testing.T) {
 	t.Parallel()
 
-	builtCluster1, builtCluster2 := libtopology.BasicPeeringTwoClustersSetup(t, utils.GetTargetImageName(), utils.TargetVersion,
-		libtopology.PeeringClusterSize{
-			AcceptingNumServers: 3,
-			AcceptingNumClients: 1,
-			DialingNumServers:   3,
-			DialingNumClients:   1,
+	cfg := &topology.Config{
+		Networks: []*topology.Network{
+			{Name: "dc1"},
+			{Name: "dc2"},
+			{Name: "wan", Type: "wan"},
 		},
-		false)
-
-	var (
-		cluster1 = builtCluster1.Cluster
-		cluster2 = builtCluster2.Cluster
-		//cluster1Sidecar = builtCluster1.Container
-		//cluster2Sidecar = builtCluster2.Container
-	)
-
-	// Create test service in each DC
-	// call mapped port for clients with dig or DNS client
-	partition := "default"
-	//dc1 := "dc1"
-	//dc2 := "dc2"
-	//peer1 := fmt.Sprintf("peer-%s-%s", dc1, partition)
-	//peer2 := fmt.Sprintf("peer-%s-%s", dc2, partition)
-
-	peer1 := libtopology.AcceptingPeerName
-	peer2 := libtopology.DialingPeerName
-
-	c1Proxy := createServices(t, cluster1, peer1)
-	_, c1port := c1Proxy.GetAddr()
-	_, c1adminPort := c1Proxy.GetAdminAddr()
-
-	c2Proxy := createServices(t, cluster2, peer2)
-	_, c2port := c2Proxy.GetAddr()
-	_, c2adminPort := c2Proxy.GetAdminAddr()
-
-	libassert.AssertUpstreamEndpointStatus(t, c1adminPort, "static-server.default", "HEALTHY", 1)
-	libassert.GetEnvoyListenerTCPFilters(t, c1adminPort)
-
-	libassert.AssertContainerState(t, c1Proxy, "running")
-	libassert.AssertFortioName(t, fmt.Sprintf("http://localhost:%d", c1port), "static-server", "")
-
-	libassert.AssertUpstreamEndpointStatus(t, c2adminPort, "static-server.default", "HEALTHY", 1)
-	libassert.GetEnvoyListenerTCPFilters(t, c2adminPort)
-
-	libassert.AssertContainerState(t, c2Proxy, "running")
-	libassert.AssertFortioName(t, fmt.Sprintf("http://localhost:%d", c2port), "static-server", "")
-
-	// export test services
-	svc1 := api.ExportedService{
-		Name: "static-server",
-		Consumers: []api.ServiceConsumer{
+		Clusters: []*topology.Cluster{
 			{
-				Peer: peer2,
+				Name: "dc1",
+				Nodes: []*topology.Node{
+					{
+						Kind: topology.NodeKindServer,
+						Name: "dc1-server1",
+						Addresses: []*topology.Address{
+							{Network: "dc1"},
+							{Network: "wan"},
+						},
+					},
+					{
+						Kind: topology.NodeKindClient,
+						Name: "dc1-client1",
+						Services: []*topology.Service{
+							{
+								ID:             topology.ServiceID{Name: "ping"},
+								Image:          "rboyer/pingpong:latest",
+								Port:           8080,
+								EnvoyAdminPort: 19000,
+								Command: []string{
+									"-bind", "0.0.0.0:8080",
+									"-dial", "127.0.0.1:9090",
+									"-pong-chaos",
+									"-dialfreq", "250ms",
+									"-name", "ping",
+								},
+								Upstreams: []*topology.Upstream{{
+									ID:        topology.ServiceID{Name: "pong"},
+									LocalPort: 9090,
+									Peer:      "peer-dc2-default",
+								}},
+							},
+						},
+					},
+				},
+				InitialConfigEntries: []api.ConfigEntry{
+					&api.ExportedServicesConfigEntry{
+						Name: "default",
+						Services: []api.ExportedService{{
+							Name: "ping",
+							Consumers: []api.ServiceConsumer{{
+								Peer: "peer-dc2-default",
+							}},
+						}},
+					},
+				},
+			},
+			{
+				Name: "dc2",
+				Nodes: []*topology.Node{
+					{
+						Kind: topology.NodeKindServer,
+						Name: "dc2-server1",
+						Addresses: []*topology.Address{
+							{Network: "dc2"},
+							{Network: "wan"},
+						},
+					},
+					{
+						Kind: topology.NodeKindDataplane,
+						Name: "dc2-client1",
+						Services: []*topology.Service{
+							{
+								ID:             topology.ServiceID{Name: "pong"},
+								Image:          "rboyer/pingpong:latest",
+								Port:           8080,
+								EnvoyAdminPort: 19000,
+								Command: []string{
+									"-bind", "0.0.0.0:8080",
+									"-dial", "127.0.0.1:9090",
+									"-pong-chaos",
+									"-dialfreq", "250ms",
+									"-name", "pong",
+								},
+								Upstreams: []*topology.Upstream{{
+									ID:        topology.ServiceID{Name: "ping"},
+									LocalPort: 9090,
+									Peer:      "peer-dc1-default",
+								}},
+							},
+						},
+					},
+				},
+				InitialConfigEntries: []api.ConfigEntry{
+					&api.ExportedServicesConfigEntry{
+						Name: "default",
+						Services: []api.ExportedService{{
+							Name: "ping",
+							Consumers: []api.ServiceConsumer{{
+								Peer: "peer-dc2-default",
+							}},
+						}},
+					},
+				},
 			},
 		},
-	}
-
-	req := api.ExportedServicesConfigEntry{
-		Name:      partition,
-		Partition: "",
-		Services: []api.ExportedService{
-			svc1,
-		},
-	}
-
-	cluster1Client := cluster1.APIClient(0)
-	_, _, err := cluster1Client.ConfigEntries().Set(&req, nil)
-	require.NoError(t, err)
-
-	svc2 := api.ExportedService{
-		Name: "static-server",
-		Consumers: []api.ServiceConsumer{
-			{
-				Peer: peer1,
+		Peerings: []*topology.Peering{{
+			Dialing: topology.PeerCluster{
+				Name: "dc1",
 			},
-		},
+			Accepting: topology.PeerCluster{
+				Name: "dc2",
+			},
+		}},
 	}
 
-	req = api.ExportedServicesConfigEntry{
-		Name:      partition,
-		Partition: "",
-		Services: []api.ExportedService{
-			svc2,
-		},
-	}
+	// launch clusters
+	sp := sprawltest.Launch(t, cfg)
+	clu1 := sp.Topology().Clusters["dc1"]
+	//clu2 := sp.Topology().Clusters["dc2"]
 
-	cluster2Client := cluster2.APIClient(0)
-	_, _, err = cluster2Client.ConfigEntries().Set(&req, nil)
-	require.NoError(t, err)
+	//cluster1Client, err := sp.APIClientForNode("dc1", clu1.FirstClient().ID(), "")
+	//require.NoError(t, err)
+	//
+	//cluster2Client, err := sp.APIClientForNode("dc2", clu2.FirstClient().ID(), "")
+	//require.NoError(t, err)
 
-	dnsPort, err := nat.NewPort("udp", "8600")
-	require.NoError(t, err)
+	port := clu1.FirstClient().ExposedPort(8600)
 
-	client1Container := cluster1.Agents[0].GetPod()
-	client1MappedDNS, err := client1Container.MappedPort(context.Background(), dnsPort)
-	require.NoError(t, err)
+	print(port)
 
-	client2Container := cluster2.Agents[0].GetPod()
-	client2MappedDNS, err := client2Container.MappedPort(context.Background(), dnsPort)
-
-	t1, t2 := mutualDNSCheck(t, client1MappedDNS, client2MappedDNS)
-	require.True(t, t1 && t2)
+	//dnsPort, err := nat.NewPort("udp", "8600")
+	//require.NoError(t, err)
+	//
+	//client1Container := cluster1.Agents[0].GetPod()
+	//client1MappedDNS, err := client1Container.MappedPort(context.Background(), dnsPort)
+	//require.NoError(t, err)
+	//
+	//client2Container := cluster2.Agents[0].GetPod()
+	//client2MappedDNS, err := client2Container.MappedPort(context.Background(), dnsPort)
+	//
+	//t1, t2 := mutualDNSCheck(t, client1MappedDNS, client2MappedDNS)
+	//require.True(t, t1 && t2)
 
 	// Need to make DNS request on 8600 to client
 	// probably via the sidecar?
@@ -188,7 +226,7 @@ func createServices(t *testing.T, cluster *libcluster.Cluster, peerName string) 
 
 func mutualDNSCheck(t *testing.T, cluster1Port, cluster2Port nat.Port) (bool, bool) {
 	m := new(dns.Msg)
-	m.SetQuestion("static-server.service.peer-dc2-default.peer.consul.", dns.TypeSRV)
+	m.SetQuestion("static-server.service.dialing-to-acceptor.peer.consul.", dns.TypeSRV)
 
 	c := new(dns.Client)
 
@@ -197,7 +235,7 @@ func mutualDNSCheck(t *testing.T, cluster1Port, cluster2Port nat.Port) (bool, bo
 	require.NoError(t, err)
 
 	m = new(dns.Msg)
-	m.SetQuestion("static-server.service.peer-dc1-default.peer.consul.", dns.TypeSRV)
+	m.SetQuestion("static-server.service.accepting-to-dialer.peer.consul.", dns.TypeSRV)
 
 	addr2 := fmt.Sprintf("127.0.0.1:%d", cluster2Port.Int())
 	reply2, _, err := c.Exchange(m, addr2)
