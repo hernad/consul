@@ -9,8 +9,8 @@ build on nix
 
 
 <pre>
-nix-shell -p go -p zip -p tree
-make release
+nix-shell -p go -p zip -p tree -p yarn
+make ui-regen
 </pre>
 
 Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
