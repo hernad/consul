@@ -7,12 +7,6 @@ Consul hernad's fork
 
 build on nix
 
-cat ~/.gitconfig 
-
-<pre>
-[url "git@github.com:"]
-    insteadOf = https://github.com/
-</pre>
 
 <pre>
 nix-shell -p go -p zip -p tree
