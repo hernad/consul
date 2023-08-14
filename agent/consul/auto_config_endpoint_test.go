@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
+	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 	"github.com/hashicorp/memberlist"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

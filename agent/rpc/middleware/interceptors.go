@@ -12,7 +12,7 @@ import (
 
 	"github.com/armon/go-metrics"
 	"github.com/armon/go-metrics/prometheus"
-	"github.com/hernad/consul-net-rpc/net/rpc"
+	"github.com/hashicorp/consul-net-rpc/net/rpc"
 	rpcRate "github.com/hernad/consul/agent/consul/rate"
 	"github.com/hashicorp/go-hclog"
 )

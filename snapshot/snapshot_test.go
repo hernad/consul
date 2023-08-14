@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hernad/consul-net-rpc/go-msgpack/codec"
+	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
 	"github.com/hernad/consul/agent/structs"
 	"github.com/hernad/consul/sdk/testutil"
 	"github.com/hashicorp/raft"

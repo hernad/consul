@@ -19,8 +19,8 @@ import (
 	"testing"
 	"time"
 
-	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
-	"github.com/hernad/consul-net-rpc/net/rpc"
+	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	"github.com/hashicorp/consul-net-rpc/net/rpc"
 	vaultapi "github.com/hashicorp/vault/api"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

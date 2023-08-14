@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/raft"
 	"github.com/stretchr/testify/require"
 
-	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
+	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 
 	"github.com/hernad/consul/acl"
 	"github.com/hernad/consul/agent/structs"

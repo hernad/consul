@@ -14,8 +14,8 @@ import (
 	"github.com/hernad/consul/lib"
 	"github.com/hernad/consul/testrpc"
 
-	"github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
-	"github.com/hernad/consul-net-rpc/net/rpc"
+	"github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	"github.com/hashicorp/consul-net-rpc/net/rpc"
 )
 
 // verifyNodeSort makes sure the order of the nodes in the slice is the same as

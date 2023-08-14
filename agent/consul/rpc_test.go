@@ -28,8 +28,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/hernad/consul-net-rpc/go-msgpack/codec"
-	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
+	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
+	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 
 	"github.com/hernad/consul/acl"
 	"github.com/hernad/consul/agent/connect"

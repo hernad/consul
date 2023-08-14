@@ -36,13 +36,6 @@ require (
 	github.com/google/pprof v0.0.0-20210720184732-4bb14d4b1be1
 	github.com/google/tcpproxy v0.0.0-20180808230851-dfa16c61dad2
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
-	github.com/hernad/consul-awsauth v0.0.0-20220713182709-05ac1c5c2706
-	github.com/hernad/consul-net-rpc v0.0.0-20221205195236-156cfab66a69
-	github.com/hernad/consul/api v1.24.0
-	github.com/hernad/consul/envoyextensions v0.4.1
-	github.com/hernad/consul/proto-public v0.4.1
-	github.com/hernad/consul/sdk v0.14.1
-	github.com/hernad/consul/troubleshoot v0.3.1
 	github.com/hashicorp/go-bexpr v0.1.2
 	github.com/hashicorp/go-checkpoint v0.5.0
 	github.com/hashicorp/go-cleanhttp v0.5.2

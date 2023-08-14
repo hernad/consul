@@ -6,7 +6,7 @@ package consul
 import (
 	"google.golang.org/grpc"
 
-	"github.com/hernad/consul-net-rpc/net/rpc"
+	"github.com/hashicorp/consul-net-rpc/net/rpc"
 	"github.com/hashicorp/go-hclog"
 
 	"github.com/hernad/consul/agent/consul/stream"

@@ -6,12 +6,12 @@ replace github.com/hernad/consul/sdk => ../sdk
 
 require (
 	github.com/google/go-cmp v0.5.9
-	github.com/hernad/consul/sdk v0.14.1
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/hashicorp/go-hclog v1.5.0
 	github.com/hashicorp/go-rootcerts v1.0.2
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/hashicorp/serf v0.10.1
+	github.com/hernad/consul/sdk v0.14.1
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/stretchr/testify v1.8.3
 	golang.org/x/exp v0.0.0-20230321023759-10a507213a29

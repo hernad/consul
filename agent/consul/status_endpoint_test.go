@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
-	"github.com/hernad/consul-net-rpc/net/rpc"
+	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	"github.com/hashicorp/consul-net-rpc/net/rpc"
 
 	"github.com/hernad/consul/agent/pool"
 	"github.com/hernad/consul/agent/structs"

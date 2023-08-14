@@ -27,7 +27,7 @@ import (
 	"golang.org/x/time/rate"
 	"google.golang.org/grpc"
 
-	"github.com/hernad/consul-net-rpc/net/rpc"
+	"github.com/hashicorp/consul-net-rpc/net/rpc"
 
 	"github.com/hernad/consul/agent/connect"
 	"github.com/hernad/consul/agent/consul/multilimiter"

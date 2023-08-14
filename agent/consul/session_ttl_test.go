@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
+	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 	"github.com/hernad/consul/agent/structs"
 	"github.com/hernad/consul/sdk/testutil/retry"
 	"github.com/hernad/consul/testrpc"

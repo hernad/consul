@@ -84,10 +84,10 @@ linters-settings:
         # Blocked module.
         - github.com/hashicorp/net-rpc-msgpackrpc:
             recommendations:
-              - github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc
+              - github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc
         - github.com/hashicorp/go-msgpack:
             recommendations:
-              - github.com/hernad/consul-net-rpc/go-msgpack
+              - github.com/hashicorp/consul-net-rpc/go-msgpack
         - github.com/golang/protobuf:
             recommendations:
               - google.golang.org/protobuf
@@ -103,7 +103,7 @@ linters-settings:
     # Specify an error message to output when a denied package is used.
     # Default: []
     packages-with-error-message:
-      - net/rpc: "only use forked copy in github.com/hernad/consul-net-rpc/net/rpc"
+      - net/rpc: "only use forked copy in github.com/hashicorp/consul-net-rpc/net/rpc"
       - github.com/golang/protobuf: "only use google.golang.org/protobuf"
 
 run:

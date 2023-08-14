@@ -16,8 +16,8 @@ import (
 
 	"github.com/hashicorp/yamux"
 
-	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
-	"github.com/hernad/consul-net-rpc/net/rpc"
+	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	"github.com/hashicorp/consul-net-rpc/net/rpc"
 
 	"github.com/hernad/consul/agent/structs"
 	"github.com/hernad/consul/lib"

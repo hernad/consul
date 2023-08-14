@@ -14,7 +14,7 @@ import (
 	"github.com/hashicorp/go-raftchunking"
 	"github.com/hashicorp/raft"
 
-	"github.com/hernad/consul-net-rpc/go-msgpack/codec"
+	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
 
 	"github.com/hernad/consul/agent/consul/state"
 	"github.com/hernad/consul/agent/consul/stream"
