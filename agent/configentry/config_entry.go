@@ -4,8 +4,8 @@
 package configentry
 
 import (
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // KindName is a value type useful for maps. You can use:

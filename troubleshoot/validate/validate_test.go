@@ -9,8 +9,8 @@ import (
 	envoy_admin_v3 "github.com/envoyproxy/go-control-plane/envoy/admin/v3"
 	envoy_cluster_v3 "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	envoy_aggregate_cluster_v3 "github.com/envoyproxy/go-control-plane/envoy/extensions/clusters/aggregate/v3"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/extensioncommon"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/envoyextensions/extensioncommon"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/types/known/anypb"
 )

@@ -12,15 +12,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
 
-	libassert "github.com/hashicorp/consul/test/integration/consul-container/libs/assert"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	libtopology "github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	libassert "github.com/hernad/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/hernad/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/hernad/consul/test/integration/consul-container/libs/service"
+	libtopology "github.com/hernad/consul/test/integration/consul-container/libs/topology"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 // TestPeering_RotateServerAndCAThenFail_

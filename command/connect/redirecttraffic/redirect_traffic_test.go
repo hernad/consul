@@ -10,9 +10,9 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/iptables"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/iptables"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestRun_FlagValidation(t *testing.T) {

@@ -40,7 +40,7 @@ jobs:
       - name: Set shared -ldflags
         id: shared-ldflags
         run: |
-          T="github.com/hashicorp/consul/version"
+          T="github.com/hernad/consul/version"
           echo "shared-ldflags=-X ${T}.GitCommit=${GITHUB_SHA::8} \
           -X ${T}.GitDescribe=${{ steps.set-product-version.outputs.product-version }} \
           -X ${T}.BuildDate=${{ steps.get-product-version.outputs.product-date }} \

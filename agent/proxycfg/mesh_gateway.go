@@ -14,15 +14,15 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/proxycfg/internal/watch"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/maps"
-	"github.com/hashicorp/consul/logging"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/proxycfg/internal/watch"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib/maps"
+	"github.com/hernad/consul/logging"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 type handlerMeshGateway struct {

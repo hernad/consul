@@ -10,9 +10,9 @@ import (
 
 	envoy_core_v3 "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	envoy_wasm_v3 "github.com/envoyproxy/go-control-plane/envoy/extensions/wasm/v3"
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/extensioncommon"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/envoyextensions/extensioncommon"
 	"github.com/hashicorp/go-multierror"
 	"github.com/mitchellh/mapstructure"
 	"google.golang.org/protobuf/types/known/anypb"

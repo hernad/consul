@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/consul/agent"
+	"github.com/hernad/consul/agent"
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 )

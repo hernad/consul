@@ -12,10 +12,10 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/hashicorp/consul/agent/cache"
-	external "github.com/hashicorp/consul/agent/grpc-external"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/agent/cache"
+	external "github.com/hernad/consul/agent/grpc-external"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 // Recommended name for registration.

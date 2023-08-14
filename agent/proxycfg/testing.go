@@ -18,13 +18,13 @@ import (
 	"github.com/mitchellh/go-testing-interface"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/cache"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/agent/cache"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 func TestPeerTrustBundles(t testing.T) *pbpeering.TrustBundleListByServiceResponse {

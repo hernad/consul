@@ -6,8 +6,8 @@ package consul
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
 	"github.com/stretchr/testify/require"
 )
 

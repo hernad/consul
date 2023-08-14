@@ -15,10 +15,10 @@ import (
 	"github.com/hashicorp/go-memdb"
 	hashstructure_v2 "github.com/mitchellh/hashstructure/v2"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
 )
 
 var IntentionSummaries = []prometheus.SummaryDefinition{

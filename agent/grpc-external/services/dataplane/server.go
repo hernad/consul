@@ -9,11 +9,11 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/configentry"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto-public/pbdataplane"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
+	"github.com/hernad/consul/agent/configentry"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto-public/pbdataplane"
 )
 
 type Server struct {

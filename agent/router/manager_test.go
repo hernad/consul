@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/consul/agent/metadata"
-	"github.com/hashicorp/consul/agent/router"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent/metadata"
+	"github.com/hernad/consul/agent/router"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 type fauxAddr struct {

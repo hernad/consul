@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/metadata"
+	"github.com/hernad/consul/agent/metadata"
 )
 
 func TestUtil_CanServersUnderstandProtocol(t *testing.T) {

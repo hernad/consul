@@ -15,8 +15,8 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestValidateCommand_noTabs(t *testing.T) {

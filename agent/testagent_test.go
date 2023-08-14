@@ -6,7 +6,7 @@ package agent
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/agent/config"
+	"github.com/hernad/consul/agent/config"
 	"github.com/hashicorp/hcl"
 )
 

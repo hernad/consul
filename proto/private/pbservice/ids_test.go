@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/proto/private/pbcommon"
+	"github.com/hernad/consul/proto/private/pbcommon"
 )
 
 func TestCheckServiceNode_UniqueID(t *testing.T) {

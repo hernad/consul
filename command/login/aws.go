@@ -12,8 +12,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 
-	iamauth "github.com/hashicorp/consul-awsauth"
-	"github.com/hashicorp/consul/agent/consul/authmethod/awsauth"
+	iamauth "github.com/hernad/consul-awsauth"
+	"github.com/hernad/consul/agent/consul/authmethod/awsauth"
 	"github.com/hashicorp/go-hclog"
 )
 

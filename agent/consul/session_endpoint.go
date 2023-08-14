@@ -13,9 +13,9 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/hashicorp/go-uuid"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
 )
 
 var SessionEndpointSummaries = []prometheus.SummaryDefinition{

@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 // PeeringStatus verifies the peering connection is the specified state with a default retry.

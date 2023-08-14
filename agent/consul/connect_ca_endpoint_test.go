@@ -12,17 +12,17 @@ import (
 	"testing"
 	"time"
 
-	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/connect"
-	ca "github.com/hashicorp/consul/agent/connect/ca"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/connect"
+	ca "github.com/hernad/consul/agent/connect/ca"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
 )
 
 func testParseCert(t *testing.T, pemValue string) *x509.Certificate {

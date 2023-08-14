@@ -14,18 +14,18 @@ import (
 	"testing"
 	"time"
 
-	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
 	"github.com/hashicorp/go-uuid"
 	"github.com/stretchr/testify/require"
 	"gotest.tools/v3/assert"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/connect/ca"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/token"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/connect/ca"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/agent/token"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestConnectCA_ConfigurationSet_ChangeKeyConfig_Primary(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 
 	"github.com/hashicorp/go-multierror"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/lib"
 )
 
 // ServiceDefinition is used to JSON decode the Service definitions. For

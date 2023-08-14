@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/hernad/consul/test/integration/consul-container/libs/service"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 // CreateAndRegisterStaticClientSidecarWith2Upstreams creates a static-client that

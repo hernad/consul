@@ -14,11 +14,11 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/consul/autopilotevents"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/agent/consul/autopilotevents"
+	"github.com/hernad/consul/agent/consul/stream"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestAutopilot_IdempotentShutdown(t *testing.T) {

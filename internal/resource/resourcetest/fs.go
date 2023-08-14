@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/fs"
 
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/proto-public/pbresource"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/encoding/protojson"
 )

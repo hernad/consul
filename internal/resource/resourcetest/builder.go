@@ -3,7 +3,7 @@ package resourcetest
 import (
 	"context"
 
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/proto-public/pbresource"
 	"github.com/oklog/ulid/v2"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"

@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/flags"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/command/flags"
 	"github.com/mitchellh/cli"
 )
 

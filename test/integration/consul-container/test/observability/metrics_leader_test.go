@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	libcluster "github.com/hernad/consul/test/integration/consul-container/libs/cluster"
 )
 
 // Given a 3-server cluster, when the leader is elected, then leader's isLeader is 1 and non-leader's 0

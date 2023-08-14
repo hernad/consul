@@ -9,7 +9,7 @@ package peering_test
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/agent/consul"
+	"github.com/hernad/consul/agent/consul"
 	"github.com/hashicorp/go-hclog"
 )
 

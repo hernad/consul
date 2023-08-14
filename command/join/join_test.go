@@ -9,7 +9,7 @@ import (
 
 	"github.com/mitchellh/cli"
 
-	"github.com/hashicorp/consul/agent"
+	"github.com/hernad/consul/agent"
 )
 
 func TestJoinCommand_noTabs(t *testing.T) {

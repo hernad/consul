@@ -12,13 +12,13 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/grpc-external/limiter"
-	"github.com/hashicorp/consul/agent/local"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/token"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/consul/stream"
+	"github.com/hernad/consul/agent/grpc-external/limiter"
+	"github.com/hernad/consul/agent/local"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/agent/token"
 )
 
 func TestConfigSource_Success(t *testing.T) {

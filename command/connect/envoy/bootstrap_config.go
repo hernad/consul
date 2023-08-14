@@ -16,7 +16,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 )
 
 const (

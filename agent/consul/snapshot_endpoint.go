@@ -18,11 +18,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
+	"github.com/hernad/consul-net-rpc/go-msgpack/codec"
 
-	"github.com/hashicorp/consul/agent/pool"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/snapshot"
+	"github.com/hernad/consul/agent/pool"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/snapshot"
 )
 
 // dispatchSnapshotRequest takes an incoming request structure with possibly some

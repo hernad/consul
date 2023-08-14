@@ -9,8 +9,8 @@ package state
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func (g *Graveyard) insertTombstoneWithTxn(tx WriteTxn, _ string, stone *Tombstone, updateMax bool) error {

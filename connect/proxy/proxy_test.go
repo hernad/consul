@@ -15,14 +15,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent"
-	agConnect "github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/connect"
-	"github.com/hashicorp/consul/sdk/freeport"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/agent"
+	agConnect "github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/connect"
+	"github.com/hernad/consul/sdk/freeport"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestProxy_public(t *testing.T) {

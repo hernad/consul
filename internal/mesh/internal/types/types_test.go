@@ -6,8 +6,8 @@ package types
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/internal/resource"
+	"github.com/hernad/consul/proto-public/pbresource"
 	"github.com/stretchr/testify/require"
 )
 

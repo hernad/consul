@@ -11,11 +11,11 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/connect"
-	external "github.com/hashicorp/consul/agent/grpc-external"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto-public/pbconnectca"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/connect"
+	external "github.com/hernad/consul/agent/grpc-external"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto-public/pbconnectca"
 )
 
 // Sign a leaf certificate for the service or agent identified by the SPIFFE

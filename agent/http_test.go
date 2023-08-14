@@ -30,14 +30,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/net/http2"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/structs"
-	tokenStore "github.com/hashicorp/consul/agent/token"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/consul"
+	"github.com/hernad/consul/agent/structs"
+	tokenStore "github.com/hernad/consul/agent/token"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestHTTPServer_UnixSocket(t *testing.T) {

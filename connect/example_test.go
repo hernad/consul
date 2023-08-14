@@ -9,7 +9,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 )
 
 type apiHandler struct{}

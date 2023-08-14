@@ -7,8 +7,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/types"
 )
 
 type MeshConfigEntry struct {

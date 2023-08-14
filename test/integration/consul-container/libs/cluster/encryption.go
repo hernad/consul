@@ -16,7 +16,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 const (

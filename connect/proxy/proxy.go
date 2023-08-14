@@ -8,9 +8,9 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/connect"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/connect"
+	"github.com/hernad/consul/lib"
 )
 
 // Proxy implements the built-in connect proxy.

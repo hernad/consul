@@ -9,7 +9,7 @@ package structs
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 )
 
 // GetEnterpriseMeta is used to synthesize the EnterpriseMeta struct from

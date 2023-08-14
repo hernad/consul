@@ -14,10 +14,10 @@ import (
 	"github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	libcluster "github.com/hernad/consul/test/integration/consul-container/libs/cluster"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 // gatewayContainer

@@ -6,9 +6,9 @@ package types
 import (
 	"math"
 
-	"github.com/hashicorp/consul/internal/resource"
-	pbcatalog "github.com/hashicorp/consul/proto-public/pbcatalog/v1alpha1"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/internal/resource"
+	pbcatalog "github.com/hernad/consul/proto-public/pbcatalog/v1alpha1"
+	"github.com/hernad/consul/proto-public/pbresource"
 	"github.com/hashicorp/go-multierror"
 )
 

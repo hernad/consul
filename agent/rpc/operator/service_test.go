@@ -14,10 +14,10 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pboperator"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pboperator"
 )
 
 type MockBackend struct {

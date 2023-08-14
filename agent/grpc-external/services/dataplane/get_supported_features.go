@@ -9,9 +9,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	external "github.com/hashicorp/consul/agent/grpc-external"
-	"github.com/hashicorp/consul/proto-public/pbdataplane"
-	"github.com/hashicorp/consul/version"
+	external "github.com/hernad/consul/agent/grpc-external"
+	"github.com/hernad/consul/proto-public/pbdataplane"
+	"github.com/hernad/consul/version"
 )
 
 func (s *Server) GetSupportedDataplaneFeatures(ctx context.Context, req *pbdataplane.GetSupportedDataplaneFeaturesRequest) (*pbdataplane.GetSupportedDataplaneFeaturesResponse, error) {

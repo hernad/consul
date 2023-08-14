@@ -6,7 +6,7 @@
 
 package auth
 
-import "github.com/hashicorp/consul/agent/structs"
+import "github.com/hernad/consul/agent/structs"
 
 func (w *TokenWriter) enterpriseValidation(token, existing *structs.ACLToken) error {
 	return nil

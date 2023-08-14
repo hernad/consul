@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
 )
 
 // This test ensures that dev mode doesn't register services by default.

@@ -25,12 +25,12 @@ import (
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 
-	"github.com/hashicorp/consul/agent/mock"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/freeport"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/agent/mock"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/freeport"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 func uniqueID() string {

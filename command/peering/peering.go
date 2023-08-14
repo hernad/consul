@@ -6,7 +6,7 @@ package peering
 import (
 	"github.com/mitchellh/cli"
 
-	"github.com/hashicorp/consul/command/flags"
+	"github.com/hernad/consul/command/flags"
 )
 
 const (

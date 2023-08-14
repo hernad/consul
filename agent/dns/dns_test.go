@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 func TestDNS_Recursor_StrategyRandom(t *testing.T) {

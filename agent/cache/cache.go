@@ -31,9 +31,9 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/ttlcache"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/lib/ttlcache"
 )
 
 // TODO(kit): remove the namespace from these once the metrics themselves change

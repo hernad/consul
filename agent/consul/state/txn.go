@@ -6,8 +6,8 @@ package state
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
 )
 
 // txnKVS handles all KV-related operations.

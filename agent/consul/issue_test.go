@@ -10,10 +10,10 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/raft"
 
-	consulfsm "github.com/hashicorp/consul/agent/consul/fsm"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
+	consulfsm "github.com/hernad/consul/agent/consul/fsm"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
 )
 
 func makeLog(buf []byte) *raft.Log {

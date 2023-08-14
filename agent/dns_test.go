@@ -21,14 +21,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/consul"
-	agentdns "github.com/hashicorp/consul/agent/dns"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/consul"
+	agentdns "github.com/hernad/consul/agent/dns"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
 )
 
 const (

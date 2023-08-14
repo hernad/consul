@@ -9,12 +9,12 @@ package agent
 import (
 	"context"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/consul"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
 )
 
 // enterpriseAgent embeds fields that we only access in consul-enterprise builds

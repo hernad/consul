@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hashicorp/consul/lib/routine"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/lib/routine"
+	"github.com/hernad/consul/sdk/testutil"
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

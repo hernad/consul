@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/lib"
 	"github.com/hashicorp/go-discover"
 	discoverk8s "github.com/hashicorp/go-discover/provider/k8s"
 

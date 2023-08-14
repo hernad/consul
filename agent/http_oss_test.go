@@ -14,7 +14,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/testrpc"
 )
 
 // extra endpoints that should be tested, and their allowed methods

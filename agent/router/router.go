@@ -12,11 +12,11 @@ import (
 	"github.com/hashicorp/serf/coordinate"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/hashicorp/consul/agent/metadata"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/logging"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/agent/metadata"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/logging"
+	"github.com/hernad/consul/types"
 )
 
 // Router keeps track of a set of network areas and their associated Serf

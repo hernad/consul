@@ -17,13 +17,13 @@ import (
 	"github.com/mitchellh/hashstructure"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
+	"github.com/hernad/consul-net-rpc/go-msgpack/codec"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/envoyextensions"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/decode"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/agent/envoyextensions"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/lib/decode"
 )
 
 const (

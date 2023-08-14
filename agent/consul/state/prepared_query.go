@@ -9,8 +9,8 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/agent/consul/prepared_query"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/consul/prepared_query"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // preparedQueriesTableSchema returns a new table schema used for storing

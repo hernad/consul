@@ -21,16 +21,16 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	tokenStore "github.com/hashicorp/consul/agent/token"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/freeport"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
+	tokenStore "github.com/hernad/consul/agent/token"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/freeport"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestLeader_RegisterMember(t *testing.T) {

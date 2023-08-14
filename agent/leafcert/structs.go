@@ -7,9 +7,9 @@ import (
 
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // ConnectCALeafRequest is the cache.Request implementation for the

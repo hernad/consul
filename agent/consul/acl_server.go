@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/auth"
-	"github.com/hashicorp/consul/agent/consul/authmethod"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/consul/auth"
+	"github.com/hernad/consul/agent/consul/authmethod"
+	"github.com/hernad/consul/agent/structs"
 )
 
 var serverACLCacheConfig *structs.ACLCachesConfig = &structs.ACLCachesConfig{

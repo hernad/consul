@@ -11,8 +11,8 @@ import (
 	"github.com/hashicorp/serf/coordinate"
 	"github.com/mitchellh/cli"
 
-	"github.com/hashicorp/consul/command/flags"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/command/flags"
+	"github.com/hernad/consul/lib"
 )
 
 // TODO(partitions): how will this command work when asking for RTT between a

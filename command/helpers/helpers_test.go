@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 )
 
 // TestParseConfigEntry is the 'api' mirror image of

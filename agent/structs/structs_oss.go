@@ -7,8 +7,8 @@
 package structs
 
 import (
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/types"
 )
 
 // TODO(acl-move-enterprise-meta) sync this with enterprise

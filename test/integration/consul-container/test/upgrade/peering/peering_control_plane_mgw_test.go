@@ -10,11 +10,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
-	libassert "github.com/hashicorp/consul/test/integration/consul-container/libs/assert"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	libtopology "github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hernad/consul/api"
+	libassert "github.com/hernad/consul/test/integration/consul-container/libs/assert"
+	libservice "github.com/hernad/consul/test/integration/consul-container/libs/service"
+	libtopology "github.com/hernad/consul/test/integration/consul-container/libs/topology"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 // TestPeering_ControlPlaneMGW verifies the peering control plane traffic go through the mesh gateway

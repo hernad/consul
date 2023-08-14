@@ -14,12 +14,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/testrpc"
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/testrpc"
+	"github.com/hernad/consul/tlsutil"
 )
 
 func TestAutoEncryptSign(t *testing.T) {

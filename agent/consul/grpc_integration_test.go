@@ -10,14 +10,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/authmethod/testauth"
-	external "github.com/hashicorp/consul/agent/grpc-external"
-	"github.com/hashicorp/consul/agent/structs"
-	tokenStore "github.com/hashicorp/consul/agent/token"
-	"github.com/hashicorp/consul/proto-public/pbacl"
-	"github.com/hashicorp/consul/proto-public/pbconnectca"
-	"github.com/hashicorp/consul/proto-public/pbserverdiscovery"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/consul/authmethod/testauth"
+	external "github.com/hernad/consul/agent/grpc-external"
+	"github.com/hernad/consul/agent/structs"
+	tokenStore "github.com/hernad/consul/agent/token"
+	"github.com/hernad/consul/proto-public/pbacl"
+	"github.com/hernad/consul/proto-public/pbconnectca"
+	"github.com/hernad/consul/proto-public/pbserverdiscovery"
 )
 
 func TestGRPCIntegration_ConnectCA_Sign(t *testing.T) {

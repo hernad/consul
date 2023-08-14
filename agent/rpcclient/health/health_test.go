@@ -8,13 +8,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/agent/rpcclient"
+	"github.com/hernad/consul/agent/rpcclient"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/submatview"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/agent/submatview"
 )
 
 func TestClient_ServiceNodes_BackendRouting(t *testing.T) {

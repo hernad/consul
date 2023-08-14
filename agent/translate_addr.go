@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 type TranslateAddressAccept int

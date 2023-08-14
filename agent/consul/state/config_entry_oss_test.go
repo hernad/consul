@@ -9,9 +9,9 @@ package state
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/configentry"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/configentry"
+	"github.com/hernad/consul/agent/structs"
 	"github.com/stretchr/testify/require"
 )
 

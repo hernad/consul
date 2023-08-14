@@ -9,12 +9,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/acl"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/acl"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestServerPeeringList(t *testing.T) {

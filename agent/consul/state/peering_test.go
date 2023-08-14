@@ -11,13 +11,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbcommon"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/proto/private/prototest"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbcommon"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/proto/private/prototest"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 const (

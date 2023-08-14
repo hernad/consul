@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 )
 
 type HTTPFlags struct {

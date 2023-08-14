@@ -6,9 +6,9 @@ package intention
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/agent"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/testrpc"
 	"github.com/stretchr/testify/require"
 )
 

@@ -7,12 +7,12 @@ import (
 	"context"
 	"errors"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/lib/retry"
-	"github.com/hashicorp/consul/proto/private/pbsubscribe"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/consul/stream"
+	"github.com/hernad/consul/lib/retry"
+	"github.com/hernad/consul/proto/private/pbsubscribe"
 )
 
 // LocalMaterializer is a materializer for a stream of events

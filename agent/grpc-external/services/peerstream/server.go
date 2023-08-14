@@ -10,13 +10,13 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"google.golang.org/grpc"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/proto/private/pbpeerstream"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/consul/stream"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/proto/private/pbpeerstream"
 )
 
 // TODO(peering): fix up these interfaces to be more testable now that they are

@@ -4,7 +4,7 @@
 package consul
 
 import (
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func (s *Server) GetSystemMetadata(key string) (string, error) {

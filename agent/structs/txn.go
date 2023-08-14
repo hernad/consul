@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 	multierror "github.com/hashicorp/go-multierror"
 )
 

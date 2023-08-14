@@ -8,10 +8,10 @@ import (
 
 	envoy_tls_v3 "github.com/envoyproxy/go-control-plane/envoy/extensions/transport_sockets/tls/v3"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/envoyextensions/xdscommon"
 )
 
 type discoChainTargets struct {

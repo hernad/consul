@@ -4,8 +4,8 @@
 package connect
 
 import (
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // AuthorizeIntentionTarget determines whether the destination is covered by the given intention

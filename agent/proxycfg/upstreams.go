@@ -11,10 +11,10 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hashicorp/consul/acl"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/acl"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 type handlerUpstreams struct {

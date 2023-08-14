@@ -17,15 +17,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/grpc-internal/balancer"
-	"github.com/hashicorp/consul/agent/grpc-internal/resolver"
-	"github.com/hashicorp/consul/agent/grpc-middleware/testutil/testservice"
-	"github.com/hashicorp/consul/agent/metadata"
-	"github.com/hashicorp/consul/ipaddr"
-	"github.com/hashicorp/consul/sdk/freeport"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/tlsutil"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/agent/grpc-internal/balancer"
+	"github.com/hernad/consul/agent/grpc-internal/resolver"
+	"github.com/hernad/consul/agent/grpc-middleware/testutil/testservice"
+	"github.com/hernad/consul/agent/metadata"
+	"github.com/hernad/consul/ipaddr"
+	"github.com/hernad/consul/sdk/freeport"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/tlsutil"
+	"github.com/hernad/consul/types"
 )
 
 // useTLSForDcAlwaysTrue tell GRPC to always return the TLS is enabled

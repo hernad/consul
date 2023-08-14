@@ -11,9 +11,9 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
 )
 
 var (

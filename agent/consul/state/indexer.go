@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // indexerSingle implements both memdb.Indexer and memdb.SingleIndexer. It may

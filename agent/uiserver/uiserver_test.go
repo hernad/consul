@@ -17,8 +17,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/net/html"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestUIServerIndex(t *testing.T) {

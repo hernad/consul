@@ -14,8 +14,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/acmpca"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 // skipIfAWSNotConfigured skips the test unless ENABLE_AWS_PCA_TESTS=true.

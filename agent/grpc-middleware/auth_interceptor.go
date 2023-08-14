@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/hernad/consul/tlsutil"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"

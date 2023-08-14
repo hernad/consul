@@ -17,11 +17,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/rpc/middleware"
-	"github.com/hashicorp/consul/lib/retry"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/testrpc"
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/hernad/consul/agent/rpc/middleware"
+	"github.com/hernad/consul/lib/retry"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/testrpc"
+	"github.com/hernad/consul/tlsutil"
 )
 
 func skipIfShortTesting(t *testing.T) {

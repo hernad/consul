@@ -7,12 +7,12 @@ import (
 	"context"
 	"sync"
 
-	"github.com/hashicorp/consul/internal/controller"
-	"github.com/hashicorp/consul/internal/radix"
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/lib/stringslice"
-	pbcatalog "github.com/hashicorp/consul/proto-public/pbcatalog/v1alpha1"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/internal/controller"
+	"github.com/hernad/consul/internal/radix"
+	"github.com/hernad/consul/internal/resource"
+	"github.com/hernad/consul/lib/stringslice"
+	pbcatalog "github.com/hernad/consul/proto-public/pbcatalog/v1alpha1"
+	"github.com/hernad/consul/proto-public/pbresource"
 )
 
 type WorkloadSelectionTracker struct {

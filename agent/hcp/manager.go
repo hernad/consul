@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	hcpclient "github.com/hashicorp/consul/agent/hcp/client"
-	"github.com/hashicorp/consul/lib"
+	hcpclient "github.com/hernad/consul/agent/hcp/client"
+	"github.com/hernad/consul/lib"
 	"github.com/hashicorp/go-hclog"
 )
 

@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/lib"
 	"google.golang.org/protobuf/proto"
 )
 

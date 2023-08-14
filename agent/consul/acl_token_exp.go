@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func (s *Server) reapExpiredTokens(ctx context.Context) error {

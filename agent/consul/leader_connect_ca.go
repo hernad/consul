@@ -18,14 +18,14 @@ import (
 	"github.com/hashicorp/go-uuid"
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/connect/ca"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/routine"
-	"github.com/hashicorp/consul/lib/semaphore"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/connect/ca"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/lib/routine"
+	"github.com/hernad/consul/lib/semaphore"
 )
 
 type caState string

@@ -16,8 +16,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/api"
 )
 
 // parseLeafX509Cert will parse an X509 certificate

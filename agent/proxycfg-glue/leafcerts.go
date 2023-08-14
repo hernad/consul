@@ -6,8 +6,8 @@ package proxycfgglue
 import (
 	"context"
 
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/proxycfg"
 )
 
 // LocalLeafCerts satisfies the proxycfg.LeafCertificate interface by sourcing data from

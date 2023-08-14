@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/hcp/client"
-	"github.com/hashicorp/consul/agent/hcp/telemetry"
+	"github.com/hernad/consul/agent/hcp/client"
+	"github.com/hernad/consul/agent/hcp/telemetry"
 )
 
 type mockMetricsClient struct {

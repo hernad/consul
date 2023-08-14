@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
 )
 
 func (s *HTTPHandlers) KVSEndpoint(resp http.ResponseWriter, req *http.Request) (interface{}, error) {

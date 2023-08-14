@@ -11,9 +11,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/hashicorp/consul/agent/pool"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/internal/storage/raft"
+	"github.com/hernad/consul/agent/pool"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/internal/storage/raft"
 )
 
 // raftHandle is the glue layer between the Raft resource storage backend and

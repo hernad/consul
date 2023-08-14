@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/agent"
+	"github.com/hernad/consul/agent"
 	"github.com/mitchellh/cli"
 )
 

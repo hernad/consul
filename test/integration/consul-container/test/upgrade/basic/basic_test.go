@@ -10,12 +10,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	libcluster "github.com/hernad/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/hernad/consul/test/integration/consul-container/libs/service"
+	"github.com/hernad/consul/test/integration/consul-container/libs/topology"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 // Test upgrade a cluster of latest version to the target version

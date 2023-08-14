@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/lib/retry"
+	"github.com/hernad/consul/lib/retry"
 	"github.com/hashicorp/go-memdb"
 	mock "github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

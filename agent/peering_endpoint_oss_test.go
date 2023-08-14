@@ -16,8 +16,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestHTTP_Peering_GenerateToken_OSS_Failure(t *testing.T) {

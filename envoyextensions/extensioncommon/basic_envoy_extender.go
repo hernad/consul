@@ -12,8 +12,8 @@ import (
 	envoy_route_v3 "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
 	"github.com/hashicorp/go-multierror"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/envoyextensions/xdscommon"
 )
 
 // ClusterMap is a map of clusters indexed by name.

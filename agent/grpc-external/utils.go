@@ -8,8 +8,8 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
 )
 
 // We tag logs with a unique identifier to ease debugging. In the future this

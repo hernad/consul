@@ -16,15 +16,15 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/acl"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/agent"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/command/acl"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/testrpc"
 
 	// activate testing auth method
-	_ "github.com/hashicorp/consul/agent/consul/authmethod/testauth"
+	_ "github.com/hernad/consul/agent/consul/authmethod/testauth"
 )
 
 func TestAuthMethodCreateCommand_noTabs(t *testing.T) {

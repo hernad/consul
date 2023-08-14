@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 	"github.com/hashicorp/go-multierror"
 )
 

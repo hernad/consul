@@ -15,15 +15,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"gopkg.in/square/go-jose.v2/jwt"
 
-	"github.com/hashicorp/consul-awsauth/iamauthtest"
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/agent/consul/authmethod/kubeauth"
-	"github.com/hashicorp/consul/agent/consul/authmethod/testauth"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/acl"
-	"github.com/hashicorp/consul/internal/go-sso/oidcauth/oidcauthtest"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul-awsauth/iamauthtest"
+	"github.com/hernad/consul/agent"
+	"github.com/hernad/consul/agent/consul/authmethod/kubeauth"
+	"github.com/hernad/consul/agent/consul/authmethod/testauth"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/command/acl"
+	"github.com/hernad/consul/internal/go-sso/oidcauth/oidcauthtest"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestLoginCommand_noTabs(t *testing.T) {

@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/hashicorp/consul/agent/cache"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/cache"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // NewCachedRootsReader returns a RootsReader that sources data from the agent cache.

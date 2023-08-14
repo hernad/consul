@@ -21,11 +21,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/connect"
-	hcpclient "github.com/hashicorp/consul/agent/hcp/client"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/retry"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/connect"
+	hcpclient "github.com/hernad/consul/agent/hcp/client"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/lib/retry"
 	"github.com/hashicorp/go-uuid"
 )
 

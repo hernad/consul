@@ -7,11 +7,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/rpcclient"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/submatview"
-	"github.com/hashicorp/consul/proto/private/pbsubscribe"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/agent/rpcclient"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/agent/submatview"
+	"github.com/hernad/consul/proto/private/pbsubscribe"
 )
 
 // Client provides access to config entry data.

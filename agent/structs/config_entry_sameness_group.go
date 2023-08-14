@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 )
 
 type SamenessGroupConfigEntry struct {

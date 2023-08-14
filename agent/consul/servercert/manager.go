@@ -11,11 +11,11 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/retry"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib/retry"
 )
 
 // Correlation ID for leaf cert watches.

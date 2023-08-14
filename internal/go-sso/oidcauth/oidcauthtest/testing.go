@@ -31,7 +31,7 @@ import (
 	"gopkg.in/square/go-jose.v2"
 	"gopkg.in/square/go-jose.v2/jwt"
 
-	"github.com/hashicorp/consul/internal/go-sso/oidcauth/internal/strutil"
+	"github.com/hernad/consul/internal/go-sso/oidcauth/internal/strutil"
 )
 
 // Server is local server the mocks the endpoints used by the OIDC and

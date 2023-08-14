@@ -11,10 +11,10 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hashicorp/consul/acl"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/decode"
+	"github.com/hernad/consul/acl"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib/decode"
 )
 
 func (s *HTTPHandlers) DiscoveryChainRead(resp http.ResponseWriter, req *http.Request) (interface{}, error) {

@@ -12,7 +12,7 @@
 package pbresource
 
 import (
-	_ "github.com/hashicorp/consul/proto-public/annotations/ratelimit"
+	_ "github.com/hernad/consul/proto-public/annotations/ratelimit"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"

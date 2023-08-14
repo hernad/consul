@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil"
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/require"
 )

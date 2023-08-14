@@ -11,8 +11,8 @@ import (
 	"github.com/imdario/mergo"
 	"github.com/mitchellh/copystructure"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
 )
 
 type StateStore interface {

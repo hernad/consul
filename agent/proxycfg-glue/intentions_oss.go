@@ -7,9 +7,9 @@
 package proxycfgglue
 
 import (
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbsubscribe"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbsubscribe"
 )
 
 func (s serverIntentions) buildSubjects(serviceName string, entMeta acl.EnterpriseMeta) []*pbsubscribe.NamedSubject {

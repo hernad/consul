@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/lib"
 )
 
 const (

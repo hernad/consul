@@ -6,11 +6,11 @@ package resource_test
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/grpc-external/testutils"
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/internal/resource/demo"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/grpc-external/testutils"
+	"github.com/hernad/consul/internal/resource"
+	"github.com/hernad/consul/internal/resource/demo"
+	"github.com/hernad/consul/proto-public/pbresource"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

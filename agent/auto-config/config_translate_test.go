@@ -8,10 +8,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/structs"
-	pbconfig "github.com/hashicorp/consul/proto/private/pbconfig"
-	"github.com/hashicorp/consul/proto/private/pbconnect"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/structs"
+	pbconfig "github.com/hernad/consul/proto/private/pbconfig"
+	"github.com/hernad/consul/proto/private/pbconnect"
 )
 
 func stringPointer(s string) *string {

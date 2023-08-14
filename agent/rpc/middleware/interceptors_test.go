@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/armon/go-metrics"
-	"github.com/hashicorp/consul/agent/consul/rate"
+	"github.com/hernad/consul/agent/consul/rate"
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

@@ -9,8 +9,8 @@ import (
 	"log"
 	"time"
 
-	hcpclient "github.com/hashicorp/consul/agent/hcp/client"
-	"github.com/hashicorp/consul/agent/hcp/config"
+	hcpclient "github.com/hernad/consul/agent/hcp/client"
+	"github.com/hernad/consul/agent/hcp/config"
 )
 
 type Provider struct {

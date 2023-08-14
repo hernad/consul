@@ -19,7 +19,7 @@ import (
 	"github.com/mitchellh/pointerstructure"
 	"golang.org/x/oauth2"
 
-	"github.com/hashicorp/consul/internal/go-sso/oidcauth/internal/strutil"
+	"github.com/hernad/consul/internal/go-sso/oidcauth/internal/strutil"
 )
 
 func contextWithHttpClient(ctx context.Context, client *http.Client) context.Context {

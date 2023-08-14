@@ -12,8 +12,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/logging"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/logging"
 )
 
 // scaleThreshold is the number of nodes after which regular sync runs are

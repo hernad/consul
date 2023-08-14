@@ -17,9 +17,9 @@ import (
 	envoy_network_rbac_v3 "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/rbac/v3"
 	envoy_matcher_v3 "github.com/envoyproxy/go-control-plane/envoy/type/matcher/v3"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 func makeRBACNetworkFilter(

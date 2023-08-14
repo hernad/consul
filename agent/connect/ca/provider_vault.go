@@ -19,10 +19,10 @@ import (
 	vaultapi "github.com/hashicorp/vault/api"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/decode"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/lib/decode"
 )
 
 const (

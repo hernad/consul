@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 )
 
 // Delay is used to mark certain locks as unacquirable. When a lock is

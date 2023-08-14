@@ -10,7 +10,7 @@
 package catalogv1alpha1
 
 import (
-	pbresource "github.com/hashicorp/consul/proto-public/pbresource"
+	pbresource "github.com/hernad/consul/proto-public/pbresource"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

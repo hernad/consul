@@ -11,10 +11,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/authmethod"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto-public/pbacl"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/consul/authmethod"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto-public/pbacl"
 )
 
 type Config struct {

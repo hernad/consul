@@ -3,7 +3,7 @@
 
 package resource
 
-import "github.com/hashicorp/consul/proto-public/pbresource"
+import "github.com/hernad/consul/proto-public/pbresource"
 
 // EqualType compares two resource types for equality without reflection.
 func EqualType(a, b *pbresource.Type) bool {

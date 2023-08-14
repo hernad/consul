@@ -25,16 +25,16 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/grpc-external/limiter"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/extensioncommon"
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/version"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/grpc-external/limiter"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/envoyextensions/extensioncommon"
+	"github.com/hernad/consul/envoyextensions/xdscommon"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/version"
 )
 
 // NOTE: For these tests, prefer not using xDS protobuf "factory" methods if

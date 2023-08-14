@@ -9,7 +9,7 @@ package structs
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 )
 
 const (

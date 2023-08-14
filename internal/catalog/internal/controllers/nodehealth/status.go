@@ -4,8 +4,8 @@
 package nodehealth
 
 import (
-	pbcatalog "github.com/hashicorp/consul/proto-public/pbcatalog/v1alpha1"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	pbcatalog "github.com/hernad/consul/proto-public/pbcatalog/v1alpha1"
+	"github.com/hernad/consul/proto-public/pbresource"
 )
 
 const (

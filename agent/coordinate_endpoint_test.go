@@ -14,10 +14,10 @@ import (
 
 	"github.com/hashicorp/serf/coordinate"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestCoordinate_Disabled_Response(t *testing.T) {

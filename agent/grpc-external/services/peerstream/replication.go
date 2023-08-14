@@ -13,15 +13,15 @@ import (
 	newproto "google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/proto/private/pbpeerstream"
-	"github.com/hashicorp/consul/proto/private/pbservice"
-	"github.com/hashicorp/consul/proto/private/pbstatus"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/proto/private/pbpeerstream"
+	"github.com/hernad/consul/proto/private/pbservice"
+	"github.com/hernad/consul/proto/private/pbstatus"
+	"github.com/hernad/consul/types"
 )
 
 /*

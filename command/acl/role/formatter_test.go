@@ -11,7 +11,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 	"github.com/stretchr/testify/require"
 )
 

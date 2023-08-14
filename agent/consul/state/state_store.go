@@ -9,9 +9,9 @@ import (
 
 	memdb "github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/consul/stream"
+	"github.com/hernad/consul/agent/structs"
 )
 
 var (

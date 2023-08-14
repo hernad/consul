@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/structs"
 )
 
 type handlerTerminatingGateway struct {

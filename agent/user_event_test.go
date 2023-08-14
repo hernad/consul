@@ -11,9 +11,9 @@ import (
 	"github.com/hashicorp/go-uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 func TestValidateUserEventParams(t *testing.T) {

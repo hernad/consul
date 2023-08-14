@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-memdb"
 )

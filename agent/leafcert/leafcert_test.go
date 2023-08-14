@@ -13,13 +13,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/consul"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 // Test that after an initial signing, new CA roots (new ID) will

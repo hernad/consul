@@ -11,11 +11,11 @@ import (
 
 	"github.com/hashicorp/go-version"
 
-	"github.com/hashicorp/consul/api"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	libtopology "github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hernad/consul/api"
+	libcluster "github.com/hernad/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/hernad/consul/test/integration/consul-container/libs/service"
+	libtopology "github.com/hernad/consul/test/integration/consul-container/libs/topology"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 // Test health check GRPC call using Target Servers and Latest GA Clients

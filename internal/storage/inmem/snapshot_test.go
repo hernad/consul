@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/internal/storage"
-	"github.com/hashicorp/consul/internal/storage/inmem"
-	"github.com/hashicorp/consul/proto-public/pbresource"
-	"github.com/hashicorp/consul/proto/private/prototest"
+	"github.com/hernad/consul/internal/storage"
+	"github.com/hernad/consul/internal/storage/inmem"
+	"github.com/hernad/consul/proto-public/pbresource"
+	"github.com/hernad/consul/proto/private/prototest"
 )
 
 func TestSnapshotRestore(t *testing.T) {

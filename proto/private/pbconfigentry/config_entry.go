@@ -9,10 +9,10 @@ import (
 
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbcommon"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbcommon"
+	"github.com/hernad/consul/types"
 )
 
 // Function variables to support proto generation

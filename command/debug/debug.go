@@ -24,8 +24,8 @@ import (
 	"github.com/mitchellh/cli"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/flags"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/command/flags"
 )
 
 const (

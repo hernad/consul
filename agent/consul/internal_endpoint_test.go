@@ -12,21 +12,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul-net-rpc/net/rpc"
+	"github.com/hernad/consul-net-rpc/net/rpc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
+	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/lib/stringslice"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/lib/stringslice"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
+	"github.com/hernad/consul/types"
 )
 
 func TestInternal_NodeInfo(t *testing.T) {

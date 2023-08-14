@@ -15,9 +15,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 	"github.com/hashicorp/serf/serf"
 
 	goretry "github.com/avast/retry-go"

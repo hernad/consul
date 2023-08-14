@@ -13,10 +13,10 @@ import (
 	"github.com/hashicorp/go-memdb"
 	hashstructure_v2 "github.com/mitchellh/hashstructure/v2"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/configentry"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/configentry"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // Health endpoint is used to query the health information

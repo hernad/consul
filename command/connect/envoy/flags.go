@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 	"github.com/hashicorp/go-sockaddr/template"
 )
 

@@ -4,7 +4,7 @@
 package extensioncommon
 
 import (
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
+	"github.com/hernad/consul/envoyextensions/xdscommon"
 )
 
 // EnvoyExtender is the interface that all Envoy extensions must implement in order

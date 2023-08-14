@@ -11,12 +11,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	libassert "github.com/hashicorp/consul/test/integration/consul-container/libs/assert"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	libassert "github.com/hernad/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/hernad/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/hernad/consul/test/integration/consul-container/libs/service"
+	"github.com/hernad/consul/test/integration/consul-container/libs/topology"
 )
 
 var requestRetryTimer = &retry.Timer{Timeout: 120 * time.Second, Wait: 500 * time.Millisecond}

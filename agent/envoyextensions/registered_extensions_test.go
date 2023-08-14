@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/extensioncommon"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/envoyextensions/extensioncommon"
 	"github.com/stretchr/testify/require"
 )
 

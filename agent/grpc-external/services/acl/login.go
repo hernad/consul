@@ -11,10 +11,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/auth"
-	external "github.com/hashicorp/consul/agent/grpc-external"
-	"github.com/hashicorp/consul/proto-public/pbacl"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/consul/auth"
+	external "github.com/hernad/consul/agent/grpc-external"
+	"github.com/hernad/consul/proto-public/pbacl"
 )
 
 // Login exchanges the presented bearer token for a Consul ACL token using a

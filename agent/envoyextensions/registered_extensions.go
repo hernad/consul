@@ -9,13 +9,13 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/go-version"
 
-	awslambda "github.com/hashicorp/consul/agent/envoyextensions/builtin/aws-lambda"
-	extauthz "github.com/hashicorp/consul/agent/envoyextensions/builtin/ext-authz"
-	"github.com/hashicorp/consul/agent/envoyextensions/builtin/lua"
-	propertyoverride "github.com/hashicorp/consul/agent/envoyextensions/builtin/property-override"
-	"github.com/hashicorp/consul/agent/envoyextensions/builtin/wasm"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/extensioncommon"
+	awslambda "github.com/hernad/consul/agent/envoyextensions/builtin/aws-lambda"
+	extauthz "github.com/hernad/consul/agent/envoyextensions/builtin/ext-authz"
+	"github.com/hernad/consul/agent/envoyextensions/builtin/lua"
+	propertyoverride "github.com/hernad/consul/agent/envoyextensions/builtin/property-override"
+	"github.com/hernad/consul/agent/envoyextensions/builtin/wasm"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/envoyextensions/extensioncommon"
 )
 
 type extensionConstructor func(api.EnvoyExtension) (extensioncommon.EnvoyExtender, error)

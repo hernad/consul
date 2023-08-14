@@ -13,11 +13,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/agent/exec"
-	"github.com/hashicorp/consul/api"
-	consulwatch "github.com/hashicorp/consul/api/watch"
-	"github.com/hashicorp/consul/command/flags"
+	"github.com/hernad/consul/agent"
+	"github.com/hernad/consul/agent/exec"
+	"github.com/hernad/consul/api"
+	consulwatch "github.com/hernad/consul/api/watch"
+	"github.com/hernad/consul/command/flags"
 	"github.com/mitchellh/cli"
 )
 

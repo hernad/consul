@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/mod/semver"
 
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 // TODO: switch from semver to go-version

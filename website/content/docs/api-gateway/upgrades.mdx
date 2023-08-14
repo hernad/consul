@@ -56,7 +56,7 @@ If you are able to tolerate downtime for your applications, you should delete pr
 1. Run the `kubectl delete` command and reference the `kustomize` directory to delete the existing CRDs. The following example deletes the CRDs that were installed with API gateway `v0.5.1`: 
 
   ```shell-session
-  $ kubectl delete --kustomize="github.com/hashicorp/consul-api-gateway/config/crd?ref=v0.5.1"
+  $ kubectl delete --kustomize="github.com/hernad/consul-api-gateway/config/crd?ref=v0.5.1"
   ``` 
 
 1. Issue the following command to use the API gateway packaged in Consul. Since Consul will not detected an external CRD, it will try to install the API gateway packaged with Consul.
@@ -699,7 +699,7 @@ This is the upgrade path to use when there are no version specific steps to take
 1. Issue the following command to install the new version of CRDs into your cluster:
 
   ``` shell-session
-  $ kubectl apply --kustomize="github.com/hashicorp/consul-api-gateway/config/crd?ref=vVERSION"
+  $ kubectl apply --kustomize="github.com/hernad/consul-api-gateway/config/crd?ref=vVERSION"
   ```
 
 1. Update `apiGateway.image` in `values.yaml`:

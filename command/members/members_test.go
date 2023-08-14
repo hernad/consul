@@ -14,8 +14,8 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent"
-	consulapi "github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/agent"
+	consulapi "github.com/hernad/consul/api"
 )
 
 // TODO(partitions): split these tests

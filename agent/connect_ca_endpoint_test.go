@@ -12,14 +12,14 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/testrpc"
 
 	"github.com/stretchr/testify/require"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func TestConnectCARoots_empty(t *testing.T) {

@@ -11,9 +11,9 @@ import (
 
 	"github.com/mitchellh/cli"
 
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/command/flags"
-	"github.com/hashicorp/consul/version"
+	"github.com/hernad/consul/agent/consul"
+	"github.com/hernad/consul/command/flags"
+	"github.com/hernad/consul/version"
 )
 
 func New(ui cli.Ui) *cmd {

@@ -10,11 +10,11 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
+	"github.com/hernad/consul/agent/consul"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
 )
 
 type delegateMock struct {

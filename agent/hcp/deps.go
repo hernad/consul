@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/armon/go-metrics"
-	hcpclient "github.com/hashicorp/consul/agent/hcp/client"
-	"github.com/hashicorp/consul/agent/hcp/config"
-	"github.com/hashicorp/consul/agent/hcp/scada"
-	"github.com/hashicorp/consul/agent/hcp/telemetry"
+	hcpclient "github.com/hernad/consul/agent/hcp/client"
+	"github.com/hernad/consul/agent/hcp/config"
+	"github.com/hernad/consul/agent/hcp/scada"
+	"github.com/hernad/consul/agent/hcp/telemetry"
 	"github.com/hashicorp/go-hclog"
 )
 

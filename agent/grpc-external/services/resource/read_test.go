@@ -13,12 +13,12 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/internal/resource/demo"
-	"github.com/hashicorp/consul/internal/storage"
-	"github.com/hashicorp/consul/proto-public/pbresource"
-	"github.com/hashicorp/consul/proto/private/prototest"
+	"github.com/hernad/consul/acl/resolver"
+	"github.com/hernad/consul/internal/resource"
+	"github.com/hernad/consul/internal/resource/demo"
+	"github.com/hernad/consul/internal/storage"
+	"github.com/hernad/consul/proto-public/pbresource"
+	"github.com/hernad/consul/proto/private/prototest"
 )
 
 func TestRead_InputValidation(t *testing.T) {

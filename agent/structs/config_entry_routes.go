@@ -10,7 +10,7 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 )
 
 // BoundRoute indicates a route that has parent gateways which

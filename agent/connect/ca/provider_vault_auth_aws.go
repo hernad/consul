@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-secure-stdlib/awsutil"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // NewAWSAuthClient returns a VaultAuthClient that can log into Vault using the AWS auth method.

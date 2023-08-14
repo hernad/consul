@@ -12,10 +12,10 @@ import (
 	"github.com/hashicorp/go-raftchunking"
 	"github.com/hashicorp/raft"
 
-	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
-	raftstorage "github.com/hashicorp/consul/internal/storage/raft"
+	"github.com/hernad/consul-net-rpc/go-msgpack/codec"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
+	raftstorage "github.com/hernad/consul/internal/storage/raft"
 )
 
 var SnapshotSummaries = []prometheus.SummaryDefinition{

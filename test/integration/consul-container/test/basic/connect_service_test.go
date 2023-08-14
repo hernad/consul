@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"testing"
 
-	libassert "github.com/hashicorp/consul/test/integration/consul-container/libs/assert"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
+	libassert "github.com/hernad/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/hernad/consul/test/integration/consul-container/libs/cluster"
+	"github.com/hernad/consul/test/integration/consul-container/libs/topology"
 )
 
 // TestBasicConnectService Summary

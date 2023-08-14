@@ -10,8 +10,8 @@ package stream
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/proto/private/pbsubscribe"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/proto/private/pbsubscribe"
 )
 
 // Topic is an identifier that partitions events. A subscription will only receive

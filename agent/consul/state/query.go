@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // Query is a type used to query any single value index that may include an

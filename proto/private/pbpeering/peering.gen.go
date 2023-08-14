@@ -2,7 +2,7 @@
 
 package pbpeering
 
-import "github.com/hashicorp/consul/api"
+import "github.com/hernad/consul/api"
 
 func EstablishRequestToAPI(s *EstablishRequest, t *api.PeeringEstablishRequest) {
 	if s == nil {

@@ -11,12 +11,12 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/configentry"
-	"github.com/hashicorp/consul/agent/grpc-external/limiter"
-	"github.com/hashicorp/consul/agent/local"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/configentry"
+	"github.com/hernad/consul/agent/grpc-external/limiter"
+	"github.com/hernad/consul/agent/local"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
 )
 
 const source proxycfg.ProxySource = "catalog"

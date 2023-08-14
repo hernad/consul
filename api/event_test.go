@@ -6,7 +6,7 @@ package api
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 func TestAPI_EventFireList(t *testing.T) {

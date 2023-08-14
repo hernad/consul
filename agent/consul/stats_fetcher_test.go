@@ -11,10 +11,10 @@ import (
 
 	"github.com/hashicorp/raft"
 
-	"github.com/hashicorp/consul/agent/metadata"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/agent/metadata"
+	"github.com/hernad/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/testrpc"
+	"github.com/hernad/consul/types"
 )
 
 func TestStatsFetcher(t *testing.T) {

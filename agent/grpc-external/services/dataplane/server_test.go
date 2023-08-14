@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/hashicorp/consul/agent/grpc-external/testutils"
-	"github.com/hashicorp/consul/proto-public/pbdataplane"
+	"github.com/hernad/consul/agent/grpc-external/testutils"
+	"github.com/hernad/consul/proto-public/pbdataplane"
 )
 
 func testClient(t *testing.T, server *Server) pbdataplane.DataplaneServiceClient {

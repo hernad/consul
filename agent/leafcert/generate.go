@@ -7,10 +7,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/consul"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
 )
 
 // caChangeJitterWindow is the time over which we spread each round of retries

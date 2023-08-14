@@ -4,7 +4,7 @@
 package types
 
 import (
-	"github.com/hashicorp/consul/internal/resource"
+	"github.com/hernad/consul/internal/resource"
 )
 
 const (

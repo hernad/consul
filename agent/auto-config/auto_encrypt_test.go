@@ -16,15 +16,15 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/cache"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/metadata"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/retry"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent/cache"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/metadata"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib/retry"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestAutoEncrypt_generateCSR(t *testing.T) {

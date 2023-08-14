@@ -4,11 +4,11 @@
 package extensionruntime
 
 import (
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/extensioncommon"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/envoyextensions/extensioncommon"
 )
 
 func GetRuntimeConfigurations(cfgSnap *proxycfg.ConfigSnapshot) map[api.CompoundServiceName][]extensioncommon.RuntimeConfig {

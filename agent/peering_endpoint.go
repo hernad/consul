@@ -11,12 +11,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/hashicorp/consul/acl"
-	external "github.com/hashicorp/consul/agent/grpc-external"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/acl"
+	external "github.com/hernad/consul/agent/grpc-external"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 // PeeringEndpoint handles GET, DELETE on v1/peering/name

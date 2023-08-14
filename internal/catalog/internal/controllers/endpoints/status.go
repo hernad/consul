@@ -3,7 +3,7 @@
 
 package endpoints
 
-import "github.com/hashicorp/consul/proto-public/pbresource"
+import "github.com/hernad/consul/proto-public/pbresource"
 
 const (
 	StatusKey                       = "consul.io/endpoint-manager"

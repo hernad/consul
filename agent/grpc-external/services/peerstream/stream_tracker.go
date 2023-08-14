@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // Tracker contains a map of (PeerID -> MutableStatus).

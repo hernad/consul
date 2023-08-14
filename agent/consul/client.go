@@ -18,15 +18,15 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/acl"
-	rpcRate "github.com/hashicorp/consul/agent/consul/rate"
-	"github.com/hashicorp/consul/agent/pool"
-	"github.com/hashicorp/consul/agent/router"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/logging"
-	"github.com/hashicorp/consul/tlsutil"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	rpcRate "github.com/hernad/consul/agent/consul/rate"
+	"github.com/hernad/consul/agent/pool"
+	"github.com/hernad/consul/agent/router"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/logging"
+	"github.com/hernad/consul/tlsutil"
+	"github.com/hernad/consul/types"
 )
 
 var ClientCounters = []prometheus.CounterDefinition{

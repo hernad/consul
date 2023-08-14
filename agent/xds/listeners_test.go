@@ -10,18 +10,18 @@ import (
 	"testing"
 	"text/template"
 
-	"github.com/hashicorp/consul/agent/xds/testcommon"
+	"github.com/hernad/consul/agent/xds/testcommon"
 	"github.com/stretchr/testify/assert"
 
 	envoy_listener_v3 "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	testinf "github.com/mitchellh/go-testing-interface"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/envoyextensions/xdscommon"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/types"
 )
 
 type listenerTestCase struct {

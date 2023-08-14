@@ -8,8 +8,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/api"
 )
 
 // ResourceReference is a reference to a ConfigEntry

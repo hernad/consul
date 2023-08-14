@@ -12,9 +12,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/agent/consul"
+	"github.com/hernad/consul/agent/structs"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/memberlist"
 	"github.com/hashicorp/serf/serf"

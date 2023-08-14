@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/consul/stream"
+	"github.com/hernad/consul/agent/structs"
 	"github.com/stretchr/testify/require"
 )
 

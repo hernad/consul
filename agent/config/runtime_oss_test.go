@@ -12,7 +12,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

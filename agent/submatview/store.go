@@ -12,8 +12,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/lib/ttlcache"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/lib/ttlcache"
 )
 
 // Store of Materializers. Store implements an interface similar to

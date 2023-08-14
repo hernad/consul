@@ -7,9 +7,9 @@ import (
 	"context"
 	"errors"
 
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/structs"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // UpdateEvent contains new data for a resource we are subscribed to (e.g. an

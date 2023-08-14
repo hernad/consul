@@ -3,7 +3,7 @@
 package catalog
 
 import (
-	limiter "github.com/hashicorp/consul/agent/grpc-external/limiter"
+	limiter "github.com/hernad/consul/agent/grpc-external/limiter"
 	mock "github.com/stretchr/testify/mock"
 )
 

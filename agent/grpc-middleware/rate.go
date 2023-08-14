@@ -14,7 +14,7 @@ import (
 
 	recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
 
-	"github.com/hashicorp/consul/agent/consul/rate"
+	"github.com/hernad/consul/agent/consul/rate"
 )
 
 // ServerRateLimiterMiddleware implements a ServerInHandle function to perform

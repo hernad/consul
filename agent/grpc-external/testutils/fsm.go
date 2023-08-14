@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/consul/stream"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/consul/stream"
 	"github.com/stretchr/testify/require"
 )
 

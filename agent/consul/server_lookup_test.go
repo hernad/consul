@@ -6,7 +6,7 @@ package consul
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/agent/metadata"
+	"github.com/hernad/consul/agent/metadata"
 	"github.com/hashicorp/raft"
 	"github.com/stretchr/testify/require"
 )

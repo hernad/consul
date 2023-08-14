@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/testcontainers/testcontainers-go"
 
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/hernad/consul/test/integration/consul-container/libs/utils"
 )
 
 // LaunchInfo is the resutl of LaunchContainerOnNode.

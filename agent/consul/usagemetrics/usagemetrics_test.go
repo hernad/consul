@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/hashicorp/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/consul/state"
 )
 
 type mockStateProvider struct {

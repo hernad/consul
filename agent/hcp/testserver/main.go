@@ -12,8 +12,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/hashicorp/consul/agent/hcp"
-	"github.com/hashicorp/consul/agent/hcp/bootstrap"
+	"github.com/hernad/consul/agent/hcp"
+	"github.com/hernad/consul/agent/hcp/bootstrap"
 )
 
 var port int

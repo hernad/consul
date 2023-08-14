@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // left out 2 config options as we are re-using vault agent's auth config.

@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/coreos/go-oidc"
-	"github.com/hashicorp/consul/internal/go-sso/oidcauth/oidcauthtest"
+	"github.com/hernad/consul/internal/go-sso/oidcauth/oidcauthtest"
 	"github.com/stretchr/testify/require"
 )
 

@@ -19,7 +19,7 @@ import (
 	"github.com/hashicorp/go-multierror"
 	prometheuscore "github.com/prometheus/client_golang/prometheus"
 
-	"github.com/hashicorp/consul/lib/retry"
+	"github.com/hernad/consul/lib/retry"
 )
 
 // TelemetryConfig is embedded in config.RuntimeConfig and holds the

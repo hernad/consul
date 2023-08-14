@@ -14,11 +14,11 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/proto-public/pbresource"
-	pbdemov1 "github.com/hashicorp/consul/proto/private/pbdemo/v1"
-	pbdemov2 "github.com/hashicorp/consul/proto/private/pbdemo/v2"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/internal/resource"
+	"github.com/hernad/consul/proto-public/pbresource"
+	pbdemov1 "github.com/hernad/consul/proto/private/pbdemo/v1"
+	pbdemov2 "github.com/hernad/consul/proto/private/pbdemo/v2"
 )
 
 var (

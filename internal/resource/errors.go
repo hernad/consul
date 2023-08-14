@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/proto-public/pbresource"
 	"google.golang.org/protobuf/reflect/protoreflect"
 )
 

@@ -4,9 +4,9 @@
 package pbconnect
 
 import (
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbcommon"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbcommon"
 )
 
 func QueryMetaFrom(f structs.QueryMeta) *pbcommon.QueryMeta {

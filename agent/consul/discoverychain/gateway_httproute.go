@@ -6,7 +6,7 @@ package discoverychain
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // compareHTTPRules implements the non-hostname order of precedence for routes specified by the K8s Gateway API spec.

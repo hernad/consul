@@ -8,7 +8,7 @@ import (
 
 	lru "github.com/hashicorp/golang-lru"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 )
 
 type ACLCachesConfig struct {

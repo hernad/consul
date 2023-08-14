@@ -9,8 +9,8 @@ import (
 	envoy_listener_v3 "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hashicorp/consul/api"
-	ext_cmn "github.com/hashicorp/consul/envoyextensions/extensioncommon"
+	"github.com/hernad/consul/api"
+	ext_cmn "github.com/hernad/consul/envoyextensions/extensioncommon"
 	"github.com/hashicorp/go-multierror"
 )
 

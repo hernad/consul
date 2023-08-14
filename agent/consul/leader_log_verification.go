@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func (s *Server) startLogVerification(ctx context.Context) error {

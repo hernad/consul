@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/grpc-external/testutils"
-	"github.com/hashicorp/consul/internal/resource/demo"
-	"github.com/hashicorp/consul/proto-public/pbresource"
-	"github.com/hashicorp/consul/proto/private/prototest"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/grpc-external/testutils"
+	"github.com/hernad/consul/internal/resource/demo"
+	"github.com/hernad/consul/proto-public/pbresource"
+	"github.com/hernad/consul/proto/private/prototest"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

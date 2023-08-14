@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/testrpc"
 
-	"github.com/hashicorp/consul/agent"
-	consulapi "github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/agent"
+	consulapi "github.com/hernad/consul/api"
+	"github.com/hernad/consul/sdk/testutil/retry"
 	"github.com/mitchellh/cli"
 )
 

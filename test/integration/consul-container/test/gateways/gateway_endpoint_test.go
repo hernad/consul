@@ -15,11 +15,11 @@ import (
 	"github.com/hashicorp/go-cleanhttp"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
-	libassert "github.com/hashicorp/consul/test/integration/consul-container/libs/assert"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	libtopology "github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
+	"github.com/hernad/consul/api"
+	libassert "github.com/hernad/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/hernad/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/hernad/consul/test/integration/consul-container/libs/service"
+	libtopology "github.com/hernad/consul/test/integration/consul-container/libs/topology"
 )
 
 // Creates a gateway service and tests to see if it is routable

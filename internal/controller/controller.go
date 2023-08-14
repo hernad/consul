@@ -12,10 +12,10 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/hashicorp/consul/agent/consul/controller/queue"
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/internal/storage"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/agent/consul/controller/queue"
+	"github.com/hernad/consul/internal/resource"
+	"github.com/hernad/consul/internal/storage"
+	"github.com/hernad/consul/proto-public/pbresource"
 )
 
 // controllerRunner contains the actual implementation of running a controller

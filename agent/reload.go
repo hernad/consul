@@ -3,7 +3,7 @@
 
 package agent
 
-import "github.com/hashicorp/consul/agent/config"
+import "github.com/hernad/consul/agent/config"
 
 // ConfigReloader is a function type which may be implemented to support reloading
 // of configuration.

@@ -94,7 +94,7 @@ func NewOTELSink(ctx context.Context, opts *OTELSinkOpts) (*OTELSink, error) {
 	// Setup OTEL Metrics SDK to aggregate, convert and export metrics periodically.
 	res := resource.NewSchemaless()
 	meterProvider := otelsdk.NewMeterProvider(otelsdk.WithResource(res), otelsdk.WithReader(opts.Reader))
-	meter := meterProvider.Meter("github.com/hashicorp/consul/agent/hcp/telemetry")
+	meter := meterProvider.Meter("github.com/hernad/consul/agent/hcp/telemetry")
 
 	return &OTELSink{
 		cfgProvider:          opts.ConfigProvider,

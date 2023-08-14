@@ -13,18 +13,18 @@ import (
 	"github.com/hashicorp/go-raftchunking"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
+	"github.com/hernad/consul-net-rpc/go-msgpack/codec"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/internal/storage"
-	"github.com/hashicorp/consul/lib/stringslice"
-	"github.com/hashicorp/consul/proto-public/pbresource"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/proto/private/prototest"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/internal/storage"
+	"github.com/hernad/consul/lib/stringslice"
+	"github.com/hernad/consul/proto-public/pbresource"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/proto/private/prototest"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestFSM_SnapshotRestore_OSS(t *testing.T) {

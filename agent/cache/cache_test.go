@@ -18,10 +18,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/lib/ttlcache"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/lib/ttlcache"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 // Test a basic Get with no indexes (and therefore no blocking queries).

@@ -11,8 +11,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/hashicorp/consul/command/flags"
-	"github.com/hashicorp/consul/command/intention"
+	"github.com/hernad/consul/command/flags"
+	"github.com/hernad/consul/command/intention"
 	"github.com/mitchellh/cli"
 	"github.com/ryanuber/columnize"
 )

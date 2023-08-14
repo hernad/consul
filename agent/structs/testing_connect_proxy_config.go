@@ -6,7 +6,7 @@ package structs
 import (
 	"github.com/mitchellh/go-testing-interface"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 )
 
 // TestConnectProxyConfig returns a ConnectProxyConfig representing a valid

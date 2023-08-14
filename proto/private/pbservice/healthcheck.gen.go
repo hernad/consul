@@ -2,7 +2,7 @@
 
 package pbservice
 
-import "github.com/hashicorp/consul/agent/structs"
+import "github.com/hernad/consul/agent/structs"
 
 func CheckTypeToStructs(s *CheckType, t *structs.CheckType) {
 	if s == nil {

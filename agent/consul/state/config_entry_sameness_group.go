@@ -1,8 +1,8 @@
 package state
 
 import (
-	"github.com/hashicorp/consul/agent/configentry"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/configentry"
+	"github.com/hernad/consul/agent/structs"
 	"github.com/hashicorp/go-memdb"
 )
 

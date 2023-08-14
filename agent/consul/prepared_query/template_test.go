@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/types"
 	"github.com/mitchellh/copystructure"
 )
 

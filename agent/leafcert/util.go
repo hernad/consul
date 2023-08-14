@@ -3,7 +3,7 @@ package leafcert
 import (
 	"time"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // calculateSoftExpiry encapsulates our logic for when to renew a cert based on

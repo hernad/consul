@@ -7,7 +7,7 @@
 package consul
 
 import (
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // Consul-enterprise only

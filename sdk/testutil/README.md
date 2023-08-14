@@ -21,8 +21,8 @@ package my_program
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/consul/structs"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/consul/structs"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestFoo_bar(t *testing.T) {

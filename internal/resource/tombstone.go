@@ -1,6 +1,6 @@
 package resource
 
-import "github.com/hashicorp/consul/proto-public/pbresource"
+import "github.com/hernad/consul/proto-public/pbresource"
 
 var (
 	TypeV1Tombstone = &pbresource.Type{

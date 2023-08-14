@@ -12,9 +12,9 @@ import (
 	"golang.org/x/sync/singleflight"
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/ttlcache"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib/ttlcache"
 )
 
 const (

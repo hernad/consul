@@ -17,10 +17,10 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"google.golang.org/grpc"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/reporting"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/consul/reporting"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
 )
 
 // runEnterpriseRateLimiterConfigEntryController start the rate limiter config controller

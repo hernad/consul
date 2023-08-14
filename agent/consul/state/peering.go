@@ -12,12 +12,12 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/configentry"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/maps"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/configentry"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/lib/maps"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 const (

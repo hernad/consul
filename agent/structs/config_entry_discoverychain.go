@@ -18,10 +18,10 @@ import (
 	"github.com/mitchellh/copystructure"
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/maps"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/lib/maps"
 )
 
 const (

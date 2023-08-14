@@ -12,8 +12,8 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/decode"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib/decode"
 )
 
 // ProxyConfig describes the keys we understand from Connect.Proxy.Config. Note

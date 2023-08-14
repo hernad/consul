@@ -42,9 +42,9 @@ along with a method for registering its types:
 package foo
 
 import (
-	"github.com/hashicorp/consul/internal/resource"
-	pbv1alpha1 "github.com/hashicorp/consul/proto-public/pbfoo/v1alpha1"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/internal/resource"
+	pbv1alpha1 "github.com/hernad/consul/proto-public/pbfoo/v1alpha1"
+	"github.com/hernad/consul/proto-public/pbresource"
 )
 
 var BarV1Alpha1Type = &pbresource.Type{
@@ -67,7 +67,7 @@ type registration method:
 ```Go
 import (
 	// …
-	"github.com/hashicorp/consul/internal/foo"
+	"github.com/hernad/consul/internal/foo"
 	// …
 )
 
@@ -241,9 +241,9 @@ package foo
 import (
 	"context"
 
-	"github.com/hashicorp/consul/internal/controller"
-	pbv1alpha1 "github.com/hashicorp/consul/proto-public/pbfoo/v1alpha1"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/internal/controller"
+	pbv1alpha1 "github.com/hernad/consul/proto-public/pbfoo/v1alpha1"
+	"github.com/hernad/consul/proto-public/pbresource"
 )
 
 func barController() controller.Controller {

@@ -13,11 +13,11 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/internal/storage"
-	"github.com/hashicorp/consul/lib/retry"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/internal/resource"
+	"github.com/hernad/consul/internal/storage"
+	"github.com/hernad/consul/lib/retry"
+	"github.com/hernad/consul/proto-public/pbresource"
 )
 
 // errUseWriteStatus is returned when the user attempts to modify the resource

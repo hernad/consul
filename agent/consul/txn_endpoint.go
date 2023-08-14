@@ -11,10 +11,10 @@ import (
 	"github.com/armon/go-metrics/prometheus"
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/api"
 )
 
 var TxnSummaries = []prometheus.SummaryDefinition{

@@ -6,14 +6,14 @@ package proxycfg
 import (
 	"time"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 
 	"github.com/mitchellh/go-testing-interface"
 
-	"github.com/hashicorp/consul/agent/configentry"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/discoverychain"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/configentry"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/consul/discoverychain"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func TestConfigSnapshotTransparentProxy(t testing.T) *ConfigSnapshot {

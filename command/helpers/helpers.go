@@ -10,8 +10,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/lib/decode"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/lib/decode"
 	"github.com/hashicorp/go-multierror"
 	"github.com/mitchellh/mapstructure"
 )

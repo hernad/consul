@@ -19,8 +19,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/logging"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/logging"
 )
 
 const (

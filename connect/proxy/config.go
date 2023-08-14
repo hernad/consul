@@ -9,11 +9,11 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/api/watch"
-	"github.com/hashicorp/consul/connect"
-	"github.com/hashicorp/consul/ipaddr"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/api/watch"
+	"github.com/hernad/consul/connect"
+	"github.com/hernad/consul/ipaddr"
+	"github.com/hernad/consul/lib"
 	"github.com/hashicorp/go-hclog"
 )
 

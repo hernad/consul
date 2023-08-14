@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	consulapi "github.com/hashicorp/consul/api"
+	consulapi "github.com/hernad/consul/api"
 	"github.com/hashicorp/go-hclog"
 	"github.com/mitchellh/mapstructure"
 )

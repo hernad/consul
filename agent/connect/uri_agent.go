@@ -6,7 +6,7 @@ package connect
 import (
 	"net/url"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/hernad/consul/acl"
 )
 
 // SpiffeIDService is the structure to represent the SPIFFE ID for an agent.

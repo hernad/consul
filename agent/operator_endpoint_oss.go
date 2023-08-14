@@ -7,7 +7,7 @@
 package agent
 
 import (
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 	autopilot "github.com/hashicorp/raft-autopilot"
 )
 

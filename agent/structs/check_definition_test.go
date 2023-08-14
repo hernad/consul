@@ -9,7 +9,7 @@ import (
 	"time"
 
 	fuzz "github.com/google/gofuzz"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 	"github.com/mitchellh/reflectwalk"
 	"github.com/stretchr/testify/require"
 )

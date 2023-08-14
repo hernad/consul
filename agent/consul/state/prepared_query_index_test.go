@@ -6,7 +6,7 @@ package state
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // Indexer is a global indexer to use for tests since there is no state.

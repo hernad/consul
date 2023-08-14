@@ -10,9 +10,9 @@ import (
 
 	"github.com/hashicorp/go-uuid"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func ACLAnonymous(t *testing.T) resolver.Result {

@@ -10,10 +10,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/submatview"
-	"github.com/hashicorp/consul/proto/private/pbservice"
-	"github.com/hashicorp/consul/proto/private/pbsubscribe"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/agent/submatview"
+	"github.com/hernad/consul/proto/private/pbservice"
+	"github.com/hernad/consul/proto/private/pbsubscribe"
 	"github.com/hashicorp/go-bexpr"
 )
 

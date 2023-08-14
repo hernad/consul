@@ -15,8 +15,8 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
-	"github.com/hashicorp/consul/version"
+	"github.com/hernad/consul/envoyextensions/xdscommon"
+	"github.com/hernad/consul/version"
 
 	"github.com/hashicorp/go-bexpr"
 	"github.com/hashicorp/serf/coordinate"
@@ -24,19 +24,19 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/hashicorp/consul/acl"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/debug"
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/structs"
-	token_store "github.com/hashicorp/consul/agent/token"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/ipaddr"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/logging"
-	"github.com/hashicorp/consul/logging/monitor"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/consul"
+	"github.com/hernad/consul/agent/debug"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/structs"
+	token_store "github.com/hernad/consul/agent/token"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/ipaddr"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/logging"
+	"github.com/hernad/consul/logging/monitor"
+	"github.com/hernad/consul/types"
 )
 
 type Self struct {

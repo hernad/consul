@@ -14,10 +14,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/agent/exec"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/flags"
+	"github.com/hernad/consul/agent"
+	"github.com/hernad/consul/agent/exec"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/command/flags"
 	"github.com/mitchellh/cli"
 )
 

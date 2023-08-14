@@ -21,7 +21,7 @@ for dir in "${DIRS[@]}"
       popd
 done
 
-find . -name \*.go | xargs fgrep 'acl.' -l | xargs $GOIMPORTS -local "github.com/hashicorp/consul" -w
+find . -name \*.go | xargs fgrep 'acl.' -l | xargs $GOIMPORTS -local "github.com/hernad/consul" -w
 
 make --always-make proto
 make go-mod-tidy

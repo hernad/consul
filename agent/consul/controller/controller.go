@@ -14,10 +14,10 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/hashicorp/consul/agent/consul/controller/queue"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/consul/controller/queue"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/consul/stream"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // much of this is a re-implementation of

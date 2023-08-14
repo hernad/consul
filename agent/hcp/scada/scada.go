@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/hashicorp/consul/agent/hcp/config"
+	"github.com/hernad/consul/agent/hcp/config"
 	"github.com/hashicorp/go-hclog"
 	libscada "github.com/hashicorp/hcp-scada-provider"
 	"github.com/hashicorp/hcp-scada-provider/capability"

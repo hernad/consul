@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/cache"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/cache"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // TODO(rb/intentions): this should move back into the agent endpoint since

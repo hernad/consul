@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func TestQueryOptionsFromContextRoundTrip(t *testing.T) {

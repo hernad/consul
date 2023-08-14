@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/agent"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/api"
 	"github.com/stretchr/testify/require"
 )
 

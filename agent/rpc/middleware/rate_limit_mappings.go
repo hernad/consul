@@ -3,7 +3,7 @@
 
 package middleware
 
-import "github.com/hashicorp/consul/agent/consul/rate"
+import "github.com/hernad/consul/agent/consul/rate"
 
 // Maps each net/rpc endpoint to a read or write operation type
 // for rate limiting purposes. Please be sure to update this list

@@ -11,11 +11,11 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/hashicorp/consul/agent/metadata"
-	"github.com/hashicorp/consul/lib"
-	libserf "github.com/hashicorp/consul/lib/serf"
-	"github.com/hashicorp/consul/logging"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/agent/metadata"
+	"github.com/hernad/consul/lib"
+	libserf "github.com/hernad/consul/lib/serf"
+	"github.com/hernad/consul/logging"
+	"github.com/hernad/consul/types"
 )
 
 // setupSerf is used to setup and initialize a Serf

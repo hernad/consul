@@ -9,9 +9,9 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/flags"
-	"github.com/hashicorp/consul/sdk/iptables"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/command/flags"
+	"github.com/hernad/consul/sdk/iptables"
 	"github.com/mitchellh/cli"
 	"github.com/mitchellh/mapstructure"
 )

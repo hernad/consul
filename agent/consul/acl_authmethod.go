@@ -6,13 +6,13 @@ package consul
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/agent/consul/authmethod"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/consul/authmethod"
+	"github.com/hernad/consul/agent/structs"
 
 	// register these as a builtin auth method
-	_ "github.com/hashicorp/consul/agent/consul/authmethod/awsauth"
-	_ "github.com/hashicorp/consul/agent/consul/authmethod/kubeauth"
-	_ "github.com/hashicorp/consul/agent/consul/authmethod/ssoauth"
+	_ "github.com/hernad/consul/agent/consul/authmethod/awsauth"
+	_ "github.com/hernad/consul/agent/consul/authmethod/kubeauth"
+	_ "github.com/hernad/consul/agent/consul/authmethod/ssoauth"
 )
 
 type authMethodValidatorEntry struct {

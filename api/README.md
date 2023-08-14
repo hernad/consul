@@ -25,7 +25,7 @@ package main
 import (
 	"fmt"
 
-	capi "github.com/hashicorp/consul/api"
+	capi "github.com/hernad/consul/api"
 )
 
 func main() {

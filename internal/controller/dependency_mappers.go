@@ -3,8 +3,8 @@ package controller
 import (
 	"context"
 
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/hernad/consul/internal/resource"
+	"github.com/hernad/consul/proto-public/pbresource"
 )
 
 // DependencyMapper is called when a dependency watched via WithWatch is changed

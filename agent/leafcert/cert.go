@@ -6,8 +6,8 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/ttlcache"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib/ttlcache"
 )
 
 // certData tracks all of the metadata about a leaf cert.

@@ -8,15 +8,15 @@ import (
 	"net"
 	"testing"
 
-	"github.com/hashicorp/consul/connect"
+	"github.com/hernad/consul/connect"
 
 	"github.com/stretchr/testify/require"
 
-	agConnect "github.com/hashicorp/consul/agent/connect"
-	agMetrics "github.com/hashicorp/consul/agent/metrics"
-	"github.com/hashicorp/consul/ipaddr"
-	"github.com/hashicorp/consul/sdk/freeport"
-	"github.com/hashicorp/consul/sdk/testutil"
+	agConnect "github.com/hernad/consul/agent/connect"
+	agMetrics "github.com/hernad/consul/agent/metrics"
+	"github.com/hernad/consul/ipaddr"
+	"github.com/hernad/consul/sdk/freeport"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestPublicListener(t *testing.T) {

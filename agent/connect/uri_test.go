@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestParseCertURIFromString(t *testing.T) {

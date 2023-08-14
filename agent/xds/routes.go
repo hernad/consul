@@ -18,10 +18,10 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/discoverychain"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/consul/discoverychain"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // routesFromSnapshot returns the xDS API representation of the "routes" in the

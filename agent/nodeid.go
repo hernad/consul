@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/agent/config"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/types"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-uuid"
 	"github.com/shirou/gopsutil/v3/host"

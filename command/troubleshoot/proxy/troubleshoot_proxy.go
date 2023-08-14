@@ -9,9 +9,9 @@ import (
 	"net"
 	"os"
 
-	"github.com/hashicorp/consul/command/cli"
-	"github.com/hashicorp/consul/command/flags"
-	troubleshoot "github.com/hashicorp/consul/troubleshoot/proxy"
+	"github.com/hernad/consul/command/cli"
+	"github.com/hernad/consul/command/flags"
+	troubleshoot "github.com/hernad/consul/troubleshoot/proxy"
 )
 
 func New(ui cli.Ui) *cmd {

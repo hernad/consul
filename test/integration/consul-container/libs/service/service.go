@@ -6,7 +6,7 @@ package service
 import (
 	"context"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/hernad/consul/api"
 )
 
 // Service represents a process that will be registered with the

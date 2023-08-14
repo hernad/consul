@@ -3,7 +3,7 @@
 
 package structs
 
-import "github.com/hashicorp/consul/acl"
+import "github.com/hernad/consul/acl"
 
 // ConnectAuthorizeRequest is the structure of a request to authorize
 // a connection.

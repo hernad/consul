@@ -14,13 +14,13 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/structpb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	external "github.com/hashicorp/consul/agent/grpc-external"
-	"github.com/hashicorp/consul/agent/grpc-external/testutils"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto-public/pbdataplane"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/acl/resolver"
+	external "github.com/hernad/consul/agent/grpc-external"
+	"github.com/hernad/consul/agent/grpc-external/testutils"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto-public/pbdataplane"
+	"github.com/hernad/consul/types"
 )
 
 const (

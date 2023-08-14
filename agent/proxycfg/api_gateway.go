@@ -7,11 +7,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/proxycfg/internal/watch"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/proxycfg/internal/watch"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 var _ kindHandler = (*handlerAPIGateway)(nil)

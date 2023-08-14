@@ -15,17 +15,17 @@ import (
 	"github.com/stretchr/testify/require"
 	"gopkg.in/square/go-jose.v2/jwt"
 
-	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
-	"github.com/hashicorp/consul-net-rpc/net/rpc"
+	msgpackrpc "github.com/hernad/consul-net-rpc/net-rpc-msgpackrpc"
+	"github.com/hernad/consul-net-rpc/net/rpc"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/authmethod/kubeauth"
-	"github.com/hashicorp/consul/agent/consul/authmethod/testauth"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/structs/aclfilter"
-	"github.com/hashicorp/consul/internal/go-sso/oidcauth/oidcauthtest"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/consul/authmethod/kubeauth"
+	"github.com/hernad/consul/agent/consul/authmethod/testauth"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs/aclfilter"
+	"github.com/hernad/consul/internal/go-sso/oidcauth/oidcauthtest"
+	"github.com/hernad/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 func TestACLEndpoint_BootstrapTokens(t *testing.T) {

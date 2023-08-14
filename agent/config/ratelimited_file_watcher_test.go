@@ -11,7 +11,7 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

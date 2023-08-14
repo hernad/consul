@@ -17,10 +17,10 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/agent/consul/rate"
-	"github.com/hashicorp/consul/agent/grpc-middleware/testutil"
-	"github.com/hashicorp/consul/agent/grpc-middleware/testutil/testservice"
-	"github.com/hashicorp/consul/proto/private/prototest"
+	"github.com/hernad/consul/agent/consul/rate"
+	"github.com/hernad/consul/agent/grpc-middleware/testutil"
+	"github.com/hernad/consul/agent/grpc-middleware/testutil/testservice"
+	"github.com/hernad/consul/proto/private/prototest"
 )
 
 func noopRegister(*grpc.Server) {}

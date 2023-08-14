@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 // GET /v1/internal/federation-state/<datacenter>

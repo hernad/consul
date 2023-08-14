@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/consul/agent/metadata"
+	"github.com/hernad/consul/agent/metadata"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/serf/serf"
 )

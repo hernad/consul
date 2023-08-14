@@ -7,11 +7,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent/consul/state"
+	"github.com/hernad/consul/agent/proxycfg"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

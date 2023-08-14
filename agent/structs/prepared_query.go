@@ -8,9 +8,9 @@ import (
 
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/types"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/cache"
+	"github.com/hernad/consul/types"
 )
 
 // QueryFailoverOptions sets options about how we fail over if there are no

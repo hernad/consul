@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
+	"github.com/hernad/consul-net-rpc/go-msgpack/codec"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 func TestStructs_CAConfiguration_MsgpackEncodeDecode(t *testing.T) {

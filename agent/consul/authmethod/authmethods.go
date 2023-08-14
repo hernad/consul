@@ -12,8 +12,8 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
 )
 
 type Cache interface {

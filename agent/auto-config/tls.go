@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/hashicorp/consul/agent/cache"
-	cachetype "github.com/hashicorp/consul/agent/cache-types"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbautoconf"
-	"github.com/hashicorp/consul/proto/private/pbconnect"
+	"github.com/hernad/consul/agent/cache"
+	cachetype "github.com/hernad/consul/agent/cache-types"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/leafcert"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbautoconf"
+	"github.com/hernad/consul/proto/private/pbconnect"
 )
 
 const (

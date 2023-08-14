@@ -2,7 +2,7 @@
 
 package pbservice
 
-import "github.com/hashicorp/consul/agent/structs"
+import "github.com/hernad/consul/agent/structs"
 
 func AccessLogsConfigToStructs(s *AccessLogsConfig, t *structs.AccessLogsConfig) {
 	if s == nil {

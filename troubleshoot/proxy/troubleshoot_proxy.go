@@ -9,8 +9,8 @@ import (
 
 	envoy_admin_v3 "github.com/envoyproxy/go-control-plane/envoy/admin/v3"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/troubleshoot/validate"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/troubleshoot/validate"
 )
 
 type Troubleshoot struct {

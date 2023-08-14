@@ -16,9 +16,9 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	grpcinternal "github.com/hashicorp/consul/agent/grpc-internal"
-	"github.com/hashicorp/consul/internal/storage"
-	pbstorage "github.com/hashicorp/consul/proto/private/pbstorage"
+	grpcinternal "github.com/hernad/consul/agent/grpc-internal"
+	"github.com/hernad/consul/internal/storage"
+	pbstorage "github.com/hernad/consul/proto/private/pbstorage"
 )
 
 // forwardingServer implements the gRPC forwarding service.

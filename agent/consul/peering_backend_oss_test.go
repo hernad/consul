@@ -14,11 +14,11 @@ import (
 	"github.com/stretchr/testify/require"
 	gogrpc "google.golang.org/grpc"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/sdk/freeport"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/sdk/freeport"
+	"github.com/hernad/consul/testrpc"
 )
 
 func TestPeeringBackend_RejectsPartition(t *testing.T) {

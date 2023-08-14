@@ -12,10 +12,10 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/config"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/hernad/consul/agent"
+	"github.com/hernad/consul/api"
+	"github.com/hernad/consul/command/config"
+	"github.com/hernad/consul/sdk/testutil"
 )
 
 func TestConfigWrite_noTabs(t *testing.T) {

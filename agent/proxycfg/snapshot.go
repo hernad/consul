@@ -9,13 +9,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/discoverychain"
-	"github.com/hashicorp/consul/agent/proxycfg/internal/watch"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/consul/discoverychain"
+	"github.com/hernad/consul/agent/proxycfg/internal/watch"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
+	"github.com/hernad/consul/proto/private/pbpeering"
 )
 
 // TODO(ingress): Can we think of a better for this bag of data?

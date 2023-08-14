@@ -9,11 +9,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/metadata"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/connect"
+	"github.com/hernad/consul/agent/metadata"
+	"github.com/hernad/consul/agent/structs"
+	"github.com/hernad/consul/lib"
 )
 
 type autoConfigBackend struct {

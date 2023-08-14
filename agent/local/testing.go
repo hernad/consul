@@ -6,7 +6,7 @@ package local
 import (
 	"os"
 
-	"github.com/hashicorp/consul/agent/token"
+	"github.com/hernad/consul/agent/token"
 	"github.com/hashicorp/go-hclog"
 	"github.com/mitchellh/go-testing-interface"
 )

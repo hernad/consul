@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/pkg/errors"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/agent/structs"
 )
 
 const (

@@ -9,7 +9,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/hashicorp/consul/sdk/testutil/retry"
+	"github.com/hernad/consul/sdk/testutil/retry"
 )
 
 func TestTakeReturn(t *testing.T) {

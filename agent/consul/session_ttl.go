@@ -10,8 +10,8 @@ import (
 	"github.com/armon/go-metrics"
 	"github.com/armon/go-metrics/prometheus"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/hernad/consul/acl"
+	"github.com/hernad/consul/agent/structs"
 )
 
 var SessionGauges = []prometheus.GaugeDefinition{
