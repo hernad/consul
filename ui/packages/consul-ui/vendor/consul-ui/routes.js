@@ -218,7 +218,6 @@
             queryParams: {
               sortBy: 'sort',
               status: 'status',
-              version: 'version',
               searchproperty: {
                 as: 'searchproperty',
                 empty: [['Node', 'Address', 'Meta', 'PeerName']],

@@ -108,7 +108,7 @@ export default class TokenAdapter extends Adapter {
 
   requestForSelf(request, serialized, { dc, index, secret }) {
     // TODO: Change here and elsewhere to use Authorization Bearer Token
-    // https://github.com/hernad/consul/pull/4502
+    // https://github.com/hashicorp/consul/pull/4502
     return request`
       GET /v1/acl/token/self?${{ dc }}
       X-Consul-Token: ${secret}

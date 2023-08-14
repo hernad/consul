@@ -206,7 +206,7 @@ export default class HttpService extends Service {
     // as previously, should be able to remove this once the data layer
     // rewrite is over and we can assert sending via form-encoded is fine
     // also see adapters/kv content-types in requestForCreate/UpdateRecord
-    // also see https://github.com/hernad/consul/issues/3804
+    // also see https://github.com/hashicorp/consul/issues/3804
     params.headers[CONTENT_TYPE] = 'application/json; charset=utf-8';
     params.url = `${this.env.var('CONSUL_API_PREFIX')}${params.url}`;
     return params;

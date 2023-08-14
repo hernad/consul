@@ -97,7 +97,7 @@ module.exports = function (environment, $ = process.env) {
 
     // Static variables used in multiple places throughout the UI
     CONSUL_HOME_URL: 'https://www.consul.io',
-    CONSUL_REPO_ISSUES_URL: 'https://github.com/hernad/consul/issues/new/choose',
+    CONSUL_REPO_ISSUES_URL: 'https://github.com/hashicorp/consul/issues/new/choose',
     CONSUL_DOCS_URL: 'https://www.consul.io/docs',
     CONSUL_DOCS_LEARN_URL: 'https://learn.hashicorp.com',
     CONSUL_DOCS_API_URL: 'https://www.consul.io/api',

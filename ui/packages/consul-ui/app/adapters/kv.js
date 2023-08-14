@@ -47,7 +47,7 @@ export default class KvAdapter extends Adapter {
   }
 
   // TODO: Should we replace text/plain here with x-www-form-encoded? See
-  // https://github.com/hernad/consul/issues/3804
+  // https://github.com/hashicorp/consul/issues/3804
   requestForCreateRecord(request, serialized, data) {
     const params = {
       dc: data.Datacenter,
