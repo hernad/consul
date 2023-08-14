@@ -12,7 +12,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 
-	iamauth "github.com/consul/consul-awsauth"
+	iamauth "github.com/hashicorp/consul-awsauth"
 	"github.com/hernad/consul/agent/consul/authmethod/awsauth"
 	"github.com/hashicorp/go-hclog"
 )

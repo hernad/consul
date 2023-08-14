@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	iamauth "github.com/consul/consul-awsauth"
+	iamauth "github.com/hashicorp/consul-awsauth"
 	"github.com/hernad/consul/agent/consul/authmethod"
 	"github.com/hernad/consul/agent/structs"
 	"github.com/hashicorp/go-hclog"
