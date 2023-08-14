@@ -5,8 +5,6 @@
 
 import Service from 'ember-can/services/can';
 
-xx;
-
 export default class AbilitiesService extends Service {
   parse(str) {
     // It's nicer to talk about SSO but technically its part of the authMethod

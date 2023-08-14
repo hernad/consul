@@ -9,7 +9,10 @@ build on nix
 
 
 <pre>
-nix-shell -p go -p zip -p tree -p yarn
+nix-shell -p go -p zip -p tree -p nodejs_16
+# https://github.com/NixOS/nixpkgs/issues/145634
+curl -o- -L https://yarnpkg.com/install.sh | bash
+# set PATH
 make ui-regen
 </pre>
 
