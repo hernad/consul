@@ -73,7 +73,7 @@ func (x *TransferLeaderRequest) GetID() string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/api.TransferLeaderResponse
+// target=github.com/hernad/consul/api.TransferLeaderResponse
 // output=operator.gen.go
 // name=API
 type TransferLeaderResponse struct {

@@ -64,7 +64,7 @@ type Config struct {
 	Logger hclog.Logger
 	// ServerNextProtos are the protocols advertised via ALPN. If nil, defaults to
 	// ["h2"] for backwards compatibility. Usually there is no need to change this,
-	// see https://github.com/hashicorp/consul/issues/4466 for some discussion on why
+	// see https://github.com/hernad/consul/issues/4466 for some discussion on why
 	// this can be useful.
 	ServerNextProtos []string
 }

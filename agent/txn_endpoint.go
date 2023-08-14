@@ -276,7 +276,7 @@ func (s *HTTPHandlers) convertOps(resp http.ResponseWriter, req *http.Request) (
 			// Check if the internal duration fields are set as well as the normal ones. This is
 			// to be backwards compatible with a bug where the internal duration fields were being
 			// deserialized from instead of the correct fields.
-			// See https://github.com/hashicorp/consul/issues/5477 for more details.
+			// See https://github.com/hernad/consul/issues/5477 for more details.
 			interval := check.Definition.IntervalDuration
 			if dur := time.Duration(check.Definition.Interval); dur != 0 {
 				interval = dur

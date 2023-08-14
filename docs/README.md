@@ -58,16 +58,16 @@ contain other important source related to Consul.
 * [grafana] contains the source for a [Grafana dashboard] that can be used to
   monitor Consul.
 
-[ui]: https://github.com/hashicorp/consul/tree/main/ui
-[website]: https://github.com/hashicorp/consul/tree/main/website
-[.github]: https://github.com/hashicorp/consul/tree/main/.github
-[.changelog]: https://github.com/hashicorp/consul/tree/main/.changelog
+[ui]: https://github.com/hernad/consul/tree/main/ui
+[website]: https://github.com/hernad/consul/tree/main/website
+[.github]: https://github.com/hernad/consul/tree/main/.github
+[.changelog]: https://github.com/hernad/consul/tree/main/.changelog
 [hashicorp/go-changelog]: https://github.com/hashicorp/go-changelog
-[CHANGELOG.md]: https://github.com/hashicorp/consul/blob/main/CHANGELOG.md
-[build-support]: https://github.com/hashicorp/consul/tree/main/build-support
-[GNUmakefile]: https://github.com/hashicorp/consul/tree/main/GNUmakefile
+[CHANGELOG.md]: https://github.com/hernad/consul/blob/main/CHANGELOG.md
+[build-support]: https://github.com/hernad/consul/tree/main/build-support
+[GNUmakefile]: https://github.com/hernad/consul/tree/main/GNUmakefile
 [Grafana dashboard]: https://grafana.com/grafana/dashboards
-[grafana]: https://github.com/hashicorp/consul/tree/main/grafana
+[grafana]: https://github.com/hernad/consul/tree/main/grafana
 
 
 ## Contributing to these docs

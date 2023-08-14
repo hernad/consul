@@ -3,7 +3,7 @@
 
 syntax = "proto3";
 
-// For more information, see: https://github.com/hashicorp/consul/tree/main/docs/resources
+// For more information, see: https://github.com/hernad/consul/tree/main/docs/resources
 package hashicorp.consul.resource;
 
 import "annotations/ratelimit/ratelimit.proto";

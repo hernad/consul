@@ -174,7 +174,7 @@ func TestSnapshot(t *testing.T) {
 	verifySnapshot(t, s1, "dc1", "")
 
 	// ensure autopilot is still running
-	// https://github.com/hashicorp/consul/issues/9626
+	// https://github.com/hernad/consul/issues/9626
 	apstatus, _ := s1.autopilot.IsRunning()
 	require.Equal(t, autopilot.Running, apstatus)
 }

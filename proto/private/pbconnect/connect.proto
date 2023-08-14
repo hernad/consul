@@ -12,7 +12,7 @@ import "private/pbcommon/common.proto";
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.IndexedCARoots
+// target=github.com/hernad/consul/agent/structs.IndexedCARoots
 // output=connect.gen.go
 // name=StructsIndexedCARoots
 message CARoots {
@@ -58,7 +58,7 @@ message CARoots {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.CARoot
+// target=github.com/hernad/consul/agent/structs.CARoot
 // output=connect.gen.go
 // name=StructsCARoot
 message CARoot {
@@ -138,7 +138,7 @@ message CARoot {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.IssuedCert
+// target=github.com/hernad/consul/agent/structs.IssuedCert
 // output=connect.gen.go
 // name=StructsIssuedCert
 message IssuedCert {

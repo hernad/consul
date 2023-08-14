@@ -82,7 +82,7 @@ func TestAgent_local_proxycfg(t *testing.T) {
 				t.Logf("re-creating watch")
 			}
 
-			// Prior to fixes in https://github.com/hashicorp/consul/pull/16497
+			// Prior to fixes in https://github.com/hernad/consul/pull/16497
 			// this call to Watch() would deadlock.
 			var err error
 			ch, stc, cancel, err = cfg.Watch(sid, a.config.NodeName, token)

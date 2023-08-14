@@ -151,7 +151,7 @@ func TestStore_CAConfig_Snapshot_Restore(t *testing.T) {
 }
 
 // Make sure we handle the case of a leftover blank CA config that
-// got stuck in a snapshot, as in https://github.com/hashicorp/consul/issues/4954
+// got stuck in a snapshot, as in https://github.com/hernad/consul/issues/4954
 func TestStore_CAConfig_Snapshot_Restore_BlankConfig(t *testing.T) {
 	s := testStateStore(t)
 	before := &structs.CAConfiguration{}

@@ -2,7 +2,7 @@
 
 This package provides the `api` package which provides programmatic access to the full Consul API.
 
-The full documentation is available on [Godoc](https://godoc.org/github.com/hashicorp/consul/api).
+The full documentation is available on [Godoc](https://godoc.org/github.com/hernad/consul/api).
 
 ## Usage
 

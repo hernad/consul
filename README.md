@@ -3,8 +3,13 @@
   <span>Consul</span>
 </h1>
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/_/consul.svg)](https://hub.docker.com/_/consul)
-[![Go Report Card](https://goreportcard.com/badge/github.com/hashicorp/consul)](https://goreportcard.com/report/github.com/hashicorp/consul)
+Consul hernad's fork
+
+build on nix
+
+nix-shell -p go -p zip -p tree
+make release
+
 
 Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
 
@@ -60,7 +65,7 @@ Full, comprehensive documentation is available on the Consul website: https://co
 
 ## Contributing
 
-Thank you for your interest in contributing! Please refer to [CONTRIBUTING.md](https://github.com/hashicorp/consul/blob/main/.github/CONTRIBUTING.md)
+Thank you for your interest in contributing! Please refer to [CONTRIBUTING.md](https://github.com/hernad/consul/blob/main/.github/CONTRIBUTING.md)
 for guidance. For contributions specifically to the browser based UI, please
-refer to the UI's [README.md](https://github.com/hashicorp/consul/blob/main/ui/packages/consul-ui/README.md)
+refer to the UI's [README.md](https://github.com/hernad/consul/blob/main/ui/packages/consul-ui/README.md)
 for guidance.

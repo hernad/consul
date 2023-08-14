@@ -35,7 +35,7 @@
 `go tool pprof -http=:8080 profile.prof`
 
 * If the correct source isn't detected automatically, specify the location of the source associated with the profile:
-`go tool pprof -http=:9090 -source_path=/Users/freddy/go/src/github.com/hashicorp/consul-enterprise profile.prof`
+`go tool pprof -http=:9090 -source_path=/Users/freddy/go/src/github.com/hernad/consul-enterprise profile.prof`
 
 Useful in annotated `Source` view which shows time on a line-by-line basis.
 

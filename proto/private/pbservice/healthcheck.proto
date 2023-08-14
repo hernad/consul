@@ -12,7 +12,7 @@ import "private/pbcommon/common.proto";
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.HealthCheck
+// target=github.com/hernad/consul/agent/structs.HealthCheck
 // output=healthcheck.gen.go
 // name=Structs
 message HealthCheck {
@@ -52,7 +52,7 @@ message HeaderValue {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.HealthCheckDefinition
+// target=github.com/hernad/consul/agent/structs.HealthCheckDefinition
 // output=healthcheck.gen.go
 // name=Structs
 message HealthCheckDefinition {
@@ -99,7 +99,7 @@ message HealthCheckDefinition {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.CheckType
+// target=github.com/hernad/consul/agent/structs.CheckType
 // output=healthcheck.gen.go
 // name=Structs
 message CheckType {

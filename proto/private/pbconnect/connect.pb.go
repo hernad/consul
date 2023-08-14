@@ -29,7 +29,7 @@ const (
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.IndexedCARoots
+// target=github.com/hernad/consul/agent/structs.IndexedCARoots
 // output=connect.gen.go
 // name=StructsIndexedCARoots
 type CARoots struct {
@@ -136,7 +136,7 @@ func (x *CARoots) GetQueryMeta() *pbcommon.QueryMeta {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.CARoot
+// target=github.com/hernad/consul/agent/structs.CARoot
 // output=connect.gen.go
 // name=StructsCARoot
 type CARoot struct {
@@ -351,7 +351,7 @@ func (x *CARoot) GetRaftIndex() *pbcommon.RaftIndex {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.IssuedCert
+// target=github.com/hernad/consul/agent/structs.IssuedCert
 // output=connect.gen.go
 // name=StructsIssuedCert
 type IssuedCert struct {

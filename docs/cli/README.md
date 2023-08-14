@@ -20,8 +20,8 @@ The CLI entrypoint is [main.go] and the majority of the source for the CLI is un
 command line flags.
 
 
-[command]: https://github.com/hashicorp/consul/tree/main/command
-[main.go]: https://github.com/hashicorp/consul/blob/main/main.go
+[command]: https://github.com/hernad/consul/tree/main/command
+[main.go]: https://github.com/hernad/consul/blob/main/main.go
 [flag]: https://pkg.go.dev/flag
 [github.com/mitchellh/cli]: https://github.com/mitchellh/cli
 

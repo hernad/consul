@@ -273,7 +273,7 @@ func (barReconciler) Reconcile(ctx context.Context, rt controller.Runtime, req c
 ```
 
 [reconciliation loops]: https://www.oreilly.com/library/view/97-things-every/9781492050896/ch73.html
-[builder API]: https://pkg.go.dev/github.com/hashicorp/consul/internal/controller#Controller
+[builder API]: https://pkg.go.dev/github.com/hernad/consul/internal/controller#Controller
 
 Next, register your controller with the controller manager. Another common
 pattern is to have your package expose a method for registering controllers,
@@ -303,8 +303,8 @@ By default, if your reconciler returns an error, it will be retried with
 exponential backoff. While this is correct in most circumstances, you can
 override it by returning [`RequeueAfter`] or [`RequeueNow`].
 
-[`RequeueAfter`]: https://pkg.go.dev/github.com/hashicorp/consul/internal/controller#RequeueAfter
-[`RequeueNow`]: https://pkg.go.dev/github.com/hashicorp/consul/internal/controller#RequeueNow
+[`RequeueAfter`]: https://pkg.go.dev/github.com/hernad/consul/internal/controller#RequeueAfter
+[`RequeueNow`]: https://pkg.go.dev/github.com/hernad/consul/internal/controller#RequeueNow
 
 ```Go
 func (barReconciler) Reconcile(context.Context, controller.Runtime, controller.Request) error {
@@ -371,7 +371,7 @@ consistency.
 > infinite loops, we recommend dirty checking the status before writing it with
 > [`resource.EqualStatus`].
 
-[`resource.EqualStatus`]: https://pkg.go.dev/github.com/hashicorp/consul/internal/resource#EqualStatus
+[`resource.EqualStatus`]: https://pkg.go.dev/github.com/hernad/consul/internal/resource#EqualStatus
 
 ### Watching Other Resources
 
@@ -394,8 +394,8 @@ to determine which of the controller's managed resources need to be reconciled.
 [`controller.MapOwner`] is a convenience function which causes the watched
 resource's [owner](#ownership--cascading-deletion) to be reconciled.
 
-[dependency mapper]: https://pkg.go.dev/github.com/hashicorp/consul/internal/controller#DependencyMapper
-[`controller.MapOwner`]: https://pkg.go.dev/github.com/hashicorp/consul/internal/controller#MapOwner
+[dependency mapper]: https://pkg.go.dev/github.com/hernad/consul/internal/controller#DependencyMapper
+[`controller.MapOwner`]: https://pkg.go.dev/github.com/hernad/consul/internal/controller#MapOwner
 
 ### Placement
 
@@ -417,7 +417,7 @@ func barController() controller.Controller {
 > Controllers placed with [`controller.PlacementEachServer`] generally shouldn't
 > modify resources (as it could lead to race conditions).
 
-[`controller.PlacementEachServer`]: https://pkg.go.dev/github.com/hashicorp/consul/internal/controller#PlacementEachServer
+[`controller.PlacementEachServer`]: https://pkg.go.dev/github.com/hernad/consul/internal/controller#PlacementEachServer
 
 ## Ownership & Cascading Deletion
 

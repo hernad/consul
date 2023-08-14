@@ -46,7 +46,7 @@ type Registration struct {
 	Mutate func(*pbresource.Resource) error
 
 	// In the future, we'll add hooks, the controller etc. here.
-	// TODO: https://github.com/hashicorp/consul/pull/16622#discussion_r1134515909
+	// TODO: https://github.com/hernad/consul/pull/16622#discussion_r1134515909
 }
 
 type ACLHooks struct {

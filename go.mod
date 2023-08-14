@@ -1,13 +1,13 @@
-module github.com/hashicorp/consul
+module github.com/hernad/consul
 
 go 1.20
 
 replace (
-	github.com/hashicorp/consul/api => ./api
-	github.com/hashicorp/consul/envoyextensions => ./envoyextensions
-	github.com/hashicorp/consul/proto-public => ./proto-public
-	github.com/hashicorp/consul/sdk => ./sdk
-	github.com/hashicorp/consul/troubleshoot => ./troubleshoot
+	github.com/hernad/consul/api => ./api
+	github.com/hernad/consul/envoyextensions => ./envoyextensions
+	github.com/hernad/consul/proto-public => ./proto-public
+	github.com/hernad/consul/sdk => ./sdk
+	github.com/hernad/consul/troubleshoot => ./troubleshoot
 )
 
 exclude (
@@ -36,13 +36,13 @@ require (
 	github.com/google/pprof v0.0.0-20210720184732-4bb14d4b1be1
 	github.com/google/tcpproxy v0.0.0-20180808230851-dfa16c61dad2
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
-	github.com/hashicorp/consul-awsauth v0.0.0-20220713182709-05ac1c5c2706
-	github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69
-	github.com/hashicorp/consul/api v1.24.0
-	github.com/hashicorp/consul/envoyextensions v0.4.1
-	github.com/hashicorp/consul/proto-public v0.4.1
-	github.com/hashicorp/consul/sdk v0.14.1
-	github.com/hashicorp/consul/troubleshoot v0.3.1
+	github.com/hernad/consul-awsauth v0.0.0-20220713182709-05ac1c5c2706
+	github.com/hernad/consul-net-rpc v0.0.0-20221205195236-156cfab66a69
+	github.com/hernad/consul/api v1.24.0
+	github.com/hernad/consul/envoyextensions v0.4.1
+	github.com/hernad/consul/proto-public v0.4.1
+	github.com/hernad/consul/sdk v0.14.1
+	github.com/hernad/consul/troubleshoot v0.3.1
 	github.com/hashicorp/go-bexpr v0.1.2
 	github.com/hashicorp/go-checkpoint v0.5.0
 	github.com/hashicorp/go-cleanhttp v0.5.2

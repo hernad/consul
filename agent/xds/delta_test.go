@@ -539,7 +539,7 @@ func TestServer_DeltaAggregatedResources_v3_BasicProtocol_HTTP2(t *testing.T) {
 }
 
 func TestServer_DeltaAggregatedResources_v3_SlowEndpointPopulation(t *testing.T) {
-	// This illustrates a scenario related to https://github.com/hashicorp/consul/issues/10563
+	// This illustrates a scenario related to https://github.com/hernad/consul/issues/10563
 
 	aclResolve := func(id string) (acl.Authorizer, error) {
 		// Allow all

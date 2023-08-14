@@ -39,7 +39,7 @@ func TestCacheNotify(t *testing.T) {
 	typ.Static(FetchResult{Value: nil, Index: 0}, errors.New("no servers available")).Once()
 
 	// Configure the type. The first time we use the fake index of "1" to verify we
-	// don't regress on https://github.com/hashicorp/consul/issues/6521 .
+	// don't regress on https://github.com/hernad/consul/issues/6521 .
 	typ.Static(FetchResult{Value: 1, Index: 1}, nil).Once().Run(func(args mock.Arguments) {
 		// Assert the right request type - all real Fetch implementations do this so
 		// it keeps us honest that Watch doesn't require type mangling which will

@@ -25,7 +25,7 @@ message TransferLeaderRequest {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/api.TransferLeaderResponse
+// target=github.com/hernad/consul/api.TransferLeaderResponse
 // output=operator.gen.go
 // name=API
 message TransferLeaderResponse {

@@ -45,7 +45,7 @@ Where `case-basic` can be replaced by any directory name from this directory.
 9. In CI, the tests are executed against different Envoy versions and with both `XDS_TARGET=client` and `XDS_TARGET=server`.
    If set to `client`, a Consul server and client are run, and services are registered against the client. If set to `server`,
    only a Consul server is run, and services are registered against the server. By default, `XDS_TARGET` is set to `server`.
-   See [this comment](https://github.com/hashicorp/consul/blob/70bb6a2abdbc5ed4a6e728e8da243c5394a631d1/test/integration/connect/envoy/run-tests.sh#L178-L212) for more information.
+   See [this comment](https://github.com/hernad/consul/blob/70bb6a2abdbc5ed4a6e728e8da243c5394a631d1/test/integration/connect/envoy/run-tests.sh#L178-L212) for more information.
 
 ## Investigating Test Failures
 

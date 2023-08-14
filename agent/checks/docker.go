@@ -164,7 +164,7 @@ func (c *DockerClient) StartExec(containerID, execID string) (*circbuf.Buffer, e
 	uri := fmt.Sprintf("/exec/%s/start", execID)
 	b, code, err := c.call("POST", uri, data)
 	switch {
-	// todo(fs): https://github.com/hashicorp/consul/pull/3621
+	// todo(fs): https://github.com/hernad/consul/pull/3621
 	// todo(fs): for some reason the docker agent closes the connection during the
 	// todo(fs): io.Copy call in c.call which causes a "connection reset by peer" error
 	// todo(fs): even though both body and status code have been received. My current is

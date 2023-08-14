@@ -9,9 +9,9 @@ The code for the Certificate Authority is in the following packages:
 3. the RPC interface is in [agent/consul/connect_ca_endpoint.go]
 
 
-[agent/consul/leader_connect_ca.go]: https://github.com/hashicorp/consul/blob/main/agent/consul/leader_connect_ca.go
-[agent/connect/ca]: https://github.com/hashicorp/consul/blob/main/agent/connect/ca/
-[agent/consul/connect_ca_endpoint.go]: https://github.com/hashicorp/consul/blob/main/agent/consul/connect_ca_endpoint.go
+[agent/consul/leader_connect_ca.go]: https://github.com/hernad/consul/blob/main/agent/consul/leader_connect_ca.go
+[agent/connect/ca]: https://github.com/hernad/consul/blob/main/agent/connect/ca/
+[agent/consul/connect_ca_endpoint.go]: https://github.com/hernad/consul/blob/main/agent/consul/connect_ca_endpoint.go
 
 
 ## Architecture

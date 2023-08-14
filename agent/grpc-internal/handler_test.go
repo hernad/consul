@@ -63,6 +63,6 @@ func TestHandler_PanicRecoveryInterceptor(t *testing.T) {
 	// Checking the entire stack trace is not possible, let's
 	// make sure that it contains a couple of expected strings.
 	require.Contains(t, strLog, `[ERROR] panic serving grpc request: panic="panic from Something`)
-	require.Contains(t, strLog, `github.com/hashicorp/consul/agent/grpc-middleware/testutil/testservice.(*SimplePanic).Something`)
+	require.Contains(t, strLog, `github.com/hernad/consul/agent/grpc-middleware/testutil/testservice.(*SimplePanic).Something`)
 
 }

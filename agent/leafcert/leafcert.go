@@ -342,7 +342,7 @@ func (m *Manager) internalGet(ctx context.Context, req *ConnectCALeafRequest) (*
 		// error, we return. Note that the invariant is that if both entry.Value AND
 		// entry.Error are non-nil, the error _must_ be more recent than the Value. In
 		// other words valid fetches should reset the error. See
-		// https://github.com/hashicorp/consul/issues/4480.
+		// https://github.com/hernad/consul/issues/4480.
 		if !first && lastFetchErr != nil {
 			return existing, cache.ResultMeta{Index: existingIndex}, lastFetchErr
 		}

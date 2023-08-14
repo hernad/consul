@@ -31,8 +31,8 @@ The Agent Configuration is implemented in [agent/config], and the primary entryp
 6. The `config.RuntimeConfig` is validated.
 7. Finally a result is returned with the `RuntimeConfig` and any warnings, or an error.
 
-[agent/config]: https://github.com/hashicorp/consul/tree/main/agent/config
-[Load]: https://pkg.go.dev/github.com/hashicorp/consul/agent/config#Load
+[agent/config]: https://github.com/hernad/consul/tree/main/agent/config
+[Load]: https://pkg.go.dev/github.com/hernad/consul/agent/config#Load
 
 If [Auto-Config] is enabled, when it receives the config from the server, the
 entire process is repeated a second time with the addition config provided as another
@@ -42,8 +42,8 @@ Default values can be specified in one of the [default sources] or set when
 converting from `Config` to `RuntimeConfig` in [builder.build]. Hopefully in the future we
 should remove one of those ways of setting default values.
 
-[default sources]: https://github.com/hashicorp/consul/blob/main/agent/config/default.go
-[builder.build]: https://github.com/hashicorp/consul/blob/main/agent/config/builder.go
+[default sources]: https://github.com/hernad/consul/blob/main/agent/config/default.go
+[builder.build]: https://github.com/hernad/consul/blob/main/agent/config/builder.go
 
 ## Auto-Config
 
@@ -54,5 +54,5 @@ implemented in a couple packages.
 * the client that receives and applies the config is implemented in [agent/auto-config]
 
 [auto_config]: https://www.consul.io/docs/agent/config/config-files#auto_config
-[agent/consul/auto_config_endpoint.go]: https://github.com/hashicorp/consul/blob/main/agent/consul/auto_config_endpoint.go
-[agent/auto-config]: https://github.com/hashicorp/consul/tree/main/agent/auto-config
+[agent/consul/auto_config_endpoint.go]: https://github.com/hernad/consul/blob/main/agent/consul/auto_config_endpoint.go
+[agent/auto-config]: https://github.com/hernad/consul/tree/main/agent/auto-config

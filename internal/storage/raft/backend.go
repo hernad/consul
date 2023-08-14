@@ -45,7 +45,7 @@ import (
 // TLS).
 //
 // For more information, see here:
-// https://github.com/hashicorp/consul/tree/main/docs/resources#raft-storage-backend
+// https://github.com/hernad/consul/tree/main/docs/resources#raft-storage-backend
 //
 // You must call Run before using the backend.
 func NewBackend(h Handle, l hclog.Logger) (*Backend, error) {

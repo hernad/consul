@@ -13,7 +13,7 @@ import "google/protobuf/struct.proto";
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.RaftIndex
+// target=github.com/hernad/consul/agent/structs.RaftIndex
 // output=common.gen.go
 // name=Structs
 // ignore-fields=state,sizeCache,unknownFields
@@ -32,7 +32,7 @@ message TargetDatacenter {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.WriteRequest
+// target=github.com/hernad/consul/agent/structs.WriteRequest
 // output=common.gen.go
 // name=Structs
 // ignore-fields=state,sizeCache,unknownFields
@@ -61,7 +61,7 @@ message ReadRequest {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.QueryOptions
+// target=github.com/hernad/consul/agent/structs.QueryOptions
 // output=common.gen.go
 // name=Structs
 // ignore-fields=StaleIfError,AllowNotModifiedResponse,state,sizeCache,unknownFields
@@ -135,7 +135,7 @@ message QueryOptions {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.QueryMeta
+// target=github.com/hernad/consul/agent/structs.QueryMeta
 // output=common.gen.go
 // name=Structs
 // ignore-fields=NotModified,Backend,state,sizeCache,unknownFields
@@ -177,7 +177,7 @@ message EnterpriseMeta {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.EnvoyExtension
+// target=github.com/hernad/consul/agent/structs.EnvoyExtension
 // output=common.gen.go
 // name=Structs
 message EnvoyExtension {
@@ -191,7 +191,7 @@ message EnvoyExtension {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.Locality
+// target=github.com/hernad/consul/agent/structs.Locality
 // output=common.gen.go
 // name=Structs
 message Locality {

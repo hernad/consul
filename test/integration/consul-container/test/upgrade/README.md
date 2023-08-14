@@ -103,7 +103,7 @@ Or
 ```
 
 Some workloads may require extra resources. They should be created in this setup section. For example,
-[https://github.com/hashicorp/consul-enterprise/blob/19e515db29541132dbbda73efb7a458cd29d705f/test/integration/consul-container/test/upgrade/peering_http_test.go#L30-L41](this peering test creates a second static-server).
+[https://github.com/hernad/consul-enterprise/blob/19e515db29541132dbbda73efb7a458cd29d705f/test/integration/consul-container/test/upgrade/peering_http_test.go#L30-L41](this peering test creates a second static-server).
 
 2. Verify the workload
 
@@ -151,7 +151,7 @@ Upgrade tests for features such as peering had API changes that return an error 
 		t.Skip("...")
 	}
 ```
-See example [here](https://github.com/hashicorp/consul-enterprise/blob/005a0a92c5f39804cef4ad5c4cd6fd3334b95aa2/test/integration/consul-container/test/upgrade/peering_control_plane_mgw_test.go#L92-L96)
+See example [here](https://github.com/hernad/consul-enterprise/blob/005a0a92c5f39804cef4ad5c4cd6fd3334b95aa2/test/integration/consul-container/test/upgrade/peering_control_plane_mgw_test.go#L92-L96)
 
 To write tests for bugs found during upgrades, see example on how to add a testcase for those scenarios [here](./fullstopupgrade_test.go). 
 
@@ -159,9 +159,9 @@ To write tests for bugs found during upgrades, see example on how to add a testc
 
 **Q.** Are containers' ports (e.g., consul's 8500, envoy sidecar's admin port
 or local upstream port) exposed on the docker host? \
-**A.** Yes, they are exposed. However, they are exposed through a [pod container](https://github.com/hashicorp/consul/blob/57e034b74621180861226a01efeb3e9cedc74d3a/test/integration/consul-container/libs/cluster/container.go#L132).
+**A.** Yes, they are exposed. However, they are exposed through a [pod container](https://github.com/hernad/consul/blob/57e034b74621180861226a01efeb3e9cedc74d3a/test/integration/consul-container/libs/cluster/container.go#L132).
 That is, a consul agent and the envoy proxy containers registered with the agent
-share the [same Linux network namespace (i.e., they share `localhost`)](https://github.com/hashicorp/consul/blob/57e034b74621180861226a01efeb3e9cedc74d3a/test/integration/consul-container/libs/cluster/app.go#L23-L30) as the pod container.
+share the [same Linux network namespace (i.e., they share `localhost`)](https://github.com/hernad/consul/blob/57e034b74621180861226a01efeb3e9cedc74d3a/test/integration/consul-container/libs/cluster/app.go#L23-L30) as the pod container.
 The pod container use the same prefix as the consul agent in its name.
 
 **Q.** To troubleshoot, how can I send API request or consul command to the deployed cluster? \

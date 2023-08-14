@@ -1905,7 +1905,7 @@ func TestCatalog_ListServiceNodes_ByAddress(t *testing.T) {
 }
 
 // TestCatalog_ListServiceNodes_ServiceTags_V1_2_3Compat asserts the compatibility between <=v1.2.3 agents and >=v1.3.0 servers
-// see https://github.com/hashicorp/consul/issues/4922
+// see https://github.com/hernad/consul/issues/4922
 func TestCatalog_ListServiceNodes_ServiceTags_V1_2_3Compat(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")

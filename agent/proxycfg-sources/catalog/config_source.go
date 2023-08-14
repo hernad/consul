@@ -60,7 +60,7 @@ func (m *ConfigSource) Watch(serviceID structs.ServiceID, nodeName string, token
 	// We do this here rather than in the xDS server because we don't want to apply
 	// the limit to services from the LocalConfigSource.
 	//
-	// See: https://github.com/hashicorp/consul/issues/15753
+	// See: https://github.com/hernad/consul/issues/15753
 	session, err := m.SessionLimiter.BeginSession()
 	if err != nil {
 		return nil, nil, nil, err

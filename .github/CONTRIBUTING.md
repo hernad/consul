@@ -21,9 +21,9 @@ work on an issue, comment on it first and tell us the approach you want to take.
 * Report potential bugs.
 * Suggest product enhancements.
 * Increase our test coverage.
-* Fix a [bug](https://github.com/hashicorp/consul/labels/type/bug).
-* Implement a requested [enhancement](https://github.com/hashicorp/consul/labels/type/enhancement).
-* Improve our guides and documentation. Consul's [Guides](https://www.consul.io/docs/guides/index.html), [Docs](https://www.consul.io/docs/index.html), and [api godoc](https://godoc.org/github.com/hashicorp/consul/api)
+* Fix a [bug](https://github.com/hernad/consul/labels/type/bug).
+* Implement a requested [enhancement](https://github.com/hernad/consul/labels/type/enhancement).
+* Improve our guides and documentation. Consul's [Guides](https://www.consul.io/docs/guides/index.html), [Docs](https://www.consul.io/docs/index.html), and [api godoc](https://godoc.org/github.com/hernad/consul/api)
 are deployed from this repo.
 * Respond to questions about usage on the issue tracker or the Consul section of the [HashiCorp forum]: (https://discuss.hashicorp.com/c/consul)
 
@@ -86,7 +86,7 @@ If you make any changes to the code, run `gofmt -s -w` to automatically format t
 
 ##### Organizing Imports
 
-Group imports using `goimports -local github.com/hashicorp/consul/` to keep [local packages](https://github.com/golang/tools/commit/ed69e84b1518b5857a9f4e01d1f9cefdcc45246e) in their own section.
+Group imports using `goimports -local github.com/hernad/consul/` to keep [local packages](https://github.com/golang/tools/commit/ed69e84b1518b5857a9f4e01d1f9cefdcc45246e) in their own section.
 
 Example: 
 ```
@@ -110,10 +110,10 @@ If a dependency is added or change, run `go mod tidy` to update `go.mod` and `go
 #### Developer Documentation
 
 Developer-focused documentation about the Consul code base is under [./docs],
-and godoc package document can be read at [pkg.go.dev/github.com/hashicorp/consul].
+and godoc package document can be read at [pkg.go.dev/github.com/hernad/consul].
 
 [./docs]: ../docs/README.md
-[pkg.go.dev/github.com/hashicorp/consul]: https://pkg.go.dev/github.com/hashicorp/consul
+[pkg.go.dev/github.com/hernad/consul]: https://pkg.go.dev/github.com/hernad/consul
 
 ### Testing
 
@@ -135,8 +135,8 @@ maintainers can provide their perspective if needed.
 
 Keep your pull requests (PRs) small and open them early so you can get feedback on
 approach from maintainers before investing your time in larger changes. For example,
-see how [applying URL-decoding of resource names across the whole HTTP API](https://github.com/hashicorp/consul/issues/11258)
-started with [iterating on the right approach for a few endpoints](https://github.com/hashicorp/consul/pull/11335)
+see how [applying URL-decoding of resource names across the whole HTTP API](https://github.com/hernad/consul/issues/11258)
+started with [iterating on the right approach for a few endpoints](https://github.com/hernad/consul/pull/11335)
 before applying more broadly.
 
 When you're ready to submit a pull request:

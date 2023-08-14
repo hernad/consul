@@ -25,11 +25,11 @@ This document is a guide for adding a new streaming topic.
    [agent/cache-types/streaming_health_services.go][5].
 
 
-[1]: https://github.com/hashicorp/consul/blob/v1.9.4/proto/pbsubscribe/subscribe.proto#L37-L45
-[2]: https://github.com/hashicorp/consul/blob/v1.9.4/agent/consul/state/memdb.go#L188-L192
-[3]: https://github.com/hashicorp/consul/blob/v1.9.4/agent/consul/state/memdb.go#L205-L209
-[4]: https://github.com/hashicorp/consul/blob/v1.9.4/agent/submatview/materializer.go#L76
-[5]: https://github.com/hashicorp/consul/blob/v1.9.4/agent/cache-types/streaming_health_services.go
-[6]: https://github.com/hashicorp/consul/blob/v1.9.4/agent/consul/state/catalog_events.go#L12-L46
-[7]: https://github.com/hashicorp/consul/blob/v1.9.4/proto/pbsubscribe/subscribe.proto#L95-L117
-[8]: https://github.com/hashicorp/consul/blob/v1.9.4/agent/rpc/subscribe/subscribe.go#L161-L168
+[1]: https://github.com/hernad/consul/blob/v1.9.4/proto/pbsubscribe/subscribe.proto#L37-L45
+[2]: https://github.com/hernad/consul/blob/v1.9.4/agent/consul/state/memdb.go#L188-L192
+[3]: https://github.com/hernad/consul/blob/v1.9.4/agent/consul/state/memdb.go#L205-L209
+[4]: https://github.com/hernad/consul/blob/v1.9.4/agent/submatview/materializer.go#L76
+[5]: https://github.com/hernad/consul/blob/v1.9.4/agent/cache-types/streaming_health_services.go
+[6]: https://github.com/hernad/consul/blob/v1.9.4/agent/consul/state/catalog_events.go#L12-L46
+[7]: https://github.com/hernad/consul/blob/v1.9.4/proto/pbsubscribe/subscribe.proto#L95-L117
+[8]: https://github.com/hernad/consul/blob/v1.9.4/agent/rpc/subscribe/subscribe.go#L161-L168

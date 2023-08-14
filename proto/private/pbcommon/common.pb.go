@@ -30,7 +30,7 @@ const (
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.RaftIndex
+// target=github.com/hernad/consul/agent/structs.RaftIndex
 // output=common.gen.go
 // name=Structs
 // ignore-fields=state,sizeCache,unknownFields
@@ -142,7 +142,7 @@ func (x *TargetDatacenter) GetDatacenter() string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.WriteRequest
+// target=github.com/hernad/consul/agent/structs.WriteRequest
 // output=common.gen.go
 // name=Structs
 // ignore-fields=state,sizeCache,unknownFields
@@ -263,7 +263,7 @@ func (x *ReadRequest) GetRequireConsistent() bool {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.QueryOptions
+// target=github.com/hernad/consul/agent/structs.QueryOptions
 // output=common.gen.go
 // name=Structs
 // ignore-fields=StaleIfError,AllowNotModifiedResponse,state,sizeCache,unknownFields
@@ -440,7 +440,7 @@ func (x *QueryOptions) GetFilter() string {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.QueryMeta
+// target=github.com/hernad/consul/agent/structs.QueryMeta
 // output=common.gen.go
 // name=Structs
 // ignore-fields=NotModified,Backend,state,sizeCache,unknownFields
@@ -596,7 +596,7 @@ func (x *EnterpriseMeta) GetPartition() string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.EnvoyExtension
+// target=github.com/hernad/consul/agent/structs.EnvoyExtension
 // output=common.gen.go
 // name=Structs
 type EnvoyExtension struct {
@@ -681,7 +681,7 @@ func (x *EnvoyExtension) GetEnvoyVersion() string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.Locality
+// target=github.com/hernad/consul/agent/structs.Locality
 // output=common.gen.go
 // name=Structs
 type Locality struct {

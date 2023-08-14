@@ -26,7 +26,7 @@ const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.RaftIndex
+// target=github.com/hernad/consul/agent/structs.RaftIndex
 // output=common.gen.go
 // name=Structs
 // ignore-fields=state,sizeCache,unknownFields
@@ -122,7 +122,7 @@ func (m *TargetDatacenter) GetDatacenter() string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.WriteRequest
+// target=github.com/hernad/consul/agent/structs.WriteRequest
 // output=common.gen.go
 // name=Structs
 // ignore-fields=state,sizeCache,unknownFields
@@ -227,7 +227,7 @@ func (m *ReadRequest) GetRequireConsistent() bool {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.QueryOptions
+// target=github.com/hernad/consul/agent/structs.QueryOptions
 // output=common.gen.go
 // name=Structs
 // ignore-fields=StaleIfError,AllowNotModifiedResponse,state,sizeCache,unknownFields
@@ -396,7 +396,7 @@ func (m *QueryOptions) GetFilter() string {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.QueryMeta
+// target=github.com/hernad/consul/agent/structs.QueryMeta
 // output=common.gen.go
 // name=Structs
 // ignore-fields=NotModified,Backend,state,sizeCache,unknownFields

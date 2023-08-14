@@ -17,7 +17,7 @@ import "private/pbservice/healthcheck.proto";
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ConnectProxyConfig
+// target=github.com/hernad/consul/agent/structs.ConnectProxyConfig
 // output=service.gen.go
 // name=Structs
 // ignore-fields=MutualTLSMode
@@ -88,7 +88,7 @@ message ConnectProxyConfig {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.Upstream
+// target=github.com/hernad/consul/agent/structs.Upstream
 // output=service.gen.go
 // name=Structs
 // ignore-fields=IngressHosts
@@ -142,7 +142,7 @@ message Upstream {
 // definitions from the agent to the state store.
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ServiceConnect
+// target=github.com/hernad/consul/agent/structs.ServiceConnect
 // output=service.gen.go
 // name=Structs
 message ServiceConnect {
@@ -168,7 +168,7 @@ message ServiceConnect {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.PeeringServiceMeta
+// target=github.com/hernad/consul/agent/structs.PeeringServiceMeta
 // output=service.gen.go
 // name=Structs
 message PeeringServiceMeta {
@@ -182,7 +182,7 @@ message PeeringServiceMeta {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ExposeConfig
+// target=github.com/hernad/consul/agent/structs.ExposeConfig
 // output=service.gen.go
 // name=Structs
 message ExposeConfig {
@@ -197,7 +197,7 @@ message ExposeConfig {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ExposePath
+// target=github.com/hernad/consul/agent/structs.ExposePath
 // output=service.gen.go
 // name=Structs
 message ExposePath {
@@ -222,7 +222,7 @@ message ExposePath {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.MeshGatewayConfig
+// target=github.com/hernad/consul/agent/structs.MeshGatewayConfig
 // output=service.gen.go
 // name=Structs
 message MeshGatewayConfig {
@@ -232,7 +232,7 @@ message MeshGatewayConfig {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.TransparentProxyConfig
+// target=github.com/hernad/consul/agent/structs.TransparentProxyConfig
 // output=service.gen.go
 // name=Structs
 message TransparentProxyConfig {
@@ -247,7 +247,7 @@ message TransparentProxyConfig {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.AccessLogsConfig
+// target=github.com/hernad/consul/agent/structs.AccessLogsConfig
 // output=service.gen.go
 // name=Structs
 message AccessLogsConfig {
@@ -268,7 +268,7 @@ message AccessLogsConfig {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ServiceDefinition
+// target=github.com/hernad/consul/agent/structs.ServiceDefinition
 // output=service.gen.go
 // name=Structs
 message ServiceDefinition {

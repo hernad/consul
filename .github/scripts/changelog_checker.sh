@@ -19,7 +19,7 @@ changelog_files=$(git --no-pager diff --name-only HEAD "$(git merge-base HEAD "o
 # If we do not find a file in .changelog/, we fail the check
 if [ -z "$changelog_files" ]; then
     # Fail status check when no .changelog entry was found on the PR
-    echo "Did not find a .changelog entry ${enforce_matching_pull_request_number}and the 'pr/no-changelog' label was not applied. Reference - https://github.com/hashicorp/consul/pull/8387"
+    echo "Did not find a .changelog entry ${enforce_matching_pull_request_number}and the 'pr/no-changelog' label was not applied. Reference - https://github.com/hernad/consul/pull/8387"
     exit 1
 else
     echo "Found .changelog entry in PR!"

@@ -29,7 +29,7 @@ const (
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.HealthCheck
+// target=github.com/hernad/consul/agent/structs.HealthCheck
 // output=healthcheck.gen.go
 // name=Structs
 type HealthCheck struct {
@@ -262,7 +262,7 @@ func (x *HeaderValue) GetValue() []string {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.HealthCheckDefinition
+// target=github.com/hernad/consul/agent/structs.HealthCheckDefinition
 // output=healthcheck.gen.go
 // name=Structs
 type HealthCheckDefinition struct {
@@ -511,7 +511,7 @@ func (x *HealthCheckDefinition) GetTTL() *durationpb.Duration {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.CheckType
+// target=github.com/hernad/consul/agent/structs.CheckType
 // output=healthcheck.gen.go
 // name=Structs
 type CheckType struct {

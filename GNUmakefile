@@ -32,7 +32,7 @@ export PATH := $(PWD)/bin:$(GOPATH)/bin:$(PATH)
 GIT_COMMIT?=$(shell git rev-parse --short HEAD)
 GIT_COMMIT_YEAR?=$(shell git show -s --format=%cd --date=format:%Y HEAD)
 GIT_DIRTY?=$(shell test -n "`git status --porcelain`" && echo "+CHANGES" || true)
-GIT_IMPORT=github.com/hashicorp/consul/version
+GIT_IMPORT=github.com/hernad/consul/version
 DATE_FORMAT="%Y-%m-%dT%H:%M:%SZ" # it's tricky to do an RFC3339 format in a cross platform way, so we hardcode UTC
 GIT_DATE=$(shell $(CURDIR)/build-support/scripts/build-date.sh) # we're using this for build date because it's stable across platform builds
 GOLDFLAGS=-X $(GIT_IMPORT).GitCommit=$(GIT_COMMIT)$(GIT_DIRTY) -X $(GIT_IMPORT).BuildDate=$(GIT_DATE)
@@ -355,7 +355,7 @@ lint/%:
 lint-container-test-deps:
 	@echo "--> Checking container tests for bad dependencies"
 	@cd test/integration/consul-container && ( \
-		found="$$(go list -m all | grep -c '^github.com/hashicorp/consul ')" ; \
+		found="$$(go list -m all | grep -c '^github.com/hernad/consul ')" ; \
 		if [[ "$$found" != "0" ]]; then \
 			echo "test/integration/consul-container: This project should not depend on the root consul module" >&2 ; \
 			exit 1 ; \

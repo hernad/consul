@@ -28,7 +28,7 @@ implemented in [agent/consul/fsm] as a set of commands.
 
 [FSM]: https://pkg.go.dev/github.com/hashicorp/raft#FSM
 [hashicorp/raft]: https://github.com/hashicorp/raft
-[agent/consul/fsm]: https://github.com/hashicorp/consul/tree/main/agent/consul/fsm
+[agent/consul/fsm]: https://github.com/hernad/consul/tree/main/agent/consul/fsm
 
 Raft also requires a [LogStore] to persist logs to disk. Consul uses [hashicorp/raft-boltdb]
 which implements [LogStore] using [boltdb]. In the near future we should be updating to
@@ -47,9 +47,9 @@ Consul stores the full state of the cluster in memory using the state store. The
 implemented in [agent/consul/state] and uses [hashicorp/go-memdb] to maintain indexes of
 data stored in a set of tables. The main entrypoint to the state store is [NewStateStore].
 
-[agent/consul/state]: https://github.com/hashicorp/consul/tree/main/agent/consul/state
+[agent/consul/state]: https://github.com/hernad/consul/tree/main/agent/consul/state
 [hashicorp/go-memdb]: https://github.com/hashicorp/go-memdb
-[NewStateStore]: https://github.com/hashicorp/consul/blob/main/agent/consul/state/state_store.go
+[NewStateStore]: https://github.com/hernad/consul/blob/main/agent/consul/state/state_store.go
 
 ### Tables, Schemas, and Indexes
 
@@ -57,7 +57,7 @@ The state store is organized as a set of tables, and each table has a set of ind
 `newDBSchema` in [schema.go] shows the full list of tables, and each schema function shows
 the full list of indexes.
 
-[schema.go]: https://github.com/hashicorp/consul/blob/main/agent/consul/state/schema.go
+[schema.go]: https://github.com/hernad/consul/blob/main/agent/consul/state/schema.go
 
 There are two styles for defining table indexes. The original style uses generic indexer
 implementations from [hashicorp/go-memdb] (ex: `StringFieldIndex`). These indexes use
@@ -71,7 +71,7 @@ value is a value derived from one or multiple fields, or when there are oss/ente
 differences between the indexes.
 
 [reflect]: https://golang.org/pkg/reflect/
-[indexer.go]: https://github.com/hashicorp/consul/blob/main/agent/consul/state/indexer.go
+[indexer.go]: https://github.com/hernad/consul/blob/main/agent/consul/state/indexer.go
 
 
 ## Snapshot and Restore
@@ -97,7 +97,7 @@ facing operations.
 [CLI]: ../cli
 [HTTP API]: ../http-api
 [commands/snapshot]: https://www.consul.io/commands/snapshot
-[consul/snapshot]: https://github.com/hashicorp/consul/tree/main/snapshot
+[consul/snapshot]: https://github.com/hernad/consul/tree/main/snapshot
 
 Finally, there is also a [snapshot agent] (enterprise only) that uses the snapshot API
 endpoints to periodically capture a snapshot, and optionally send it somewhere for

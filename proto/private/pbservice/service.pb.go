@@ -33,7 +33,7 @@ const (
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ConnectProxyConfig
+// target=github.com/hernad/consul/agent/structs.ConnectProxyConfig
 // output=service.gen.go
 // name=Structs
 // ignore-fields=MutualTLSMode
@@ -219,7 +219,7 @@ func (x *ConnectProxyConfig) GetAccessLogs() *AccessLogsConfig {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.Upstream
+// target=github.com/hernad/consul/agent/structs.Upstream
 // output=service.gen.go
 // name=Structs
 // ignore-fields=IngressHosts
@@ -393,7 +393,7 @@ func (x *Upstream) GetLocalBindSocketMode() string {
 // definitions from the agent to the state store.
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ServiceConnect
+// target=github.com/hernad/consul/agent/structs.ServiceConnect
 // output=service.gen.go
 // name=Structs
 type ServiceConnect struct {
@@ -472,7 +472,7 @@ func (x *ServiceConnect) GetPeerMeta() *PeeringServiceMeta {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.PeeringServiceMeta
+// target=github.com/hernad/consul/agent/structs.PeeringServiceMeta
 // output=service.gen.go
 // name=Structs
 type PeeringServiceMeta struct {
@@ -543,7 +543,7 @@ func (x *PeeringServiceMeta) GetProtocol() string {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ExposeConfig
+// target=github.com/hernad/consul/agent/structs.ExposeConfig
 // output=service.gen.go
 // name=Structs
 type ExposeConfig struct {
@@ -607,7 +607,7 @@ func (x *ExposeConfig) GetPaths() []*ExposePath {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ExposePath
+// target=github.com/hernad/consul/agent/structs.ExposePath
 // output=service.gen.go
 // name=Structs
 type ExposePath struct {
@@ -699,7 +699,7 @@ func (x *ExposePath) GetParsedFromCheck() bool {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.MeshGatewayConfig
+// target=github.com/hernad/consul/agent/structs.MeshGatewayConfig
 // output=service.gen.go
 // name=Structs
 type MeshGatewayConfig struct {
@@ -752,7 +752,7 @@ func (x *MeshGatewayConfig) GetMode() string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.TransparentProxyConfig
+// target=github.com/hernad/consul/agent/structs.TransparentProxyConfig
 // output=service.gen.go
 // name=Structs
 type TransparentProxyConfig struct {
@@ -816,7 +816,7 @@ func (x *TransparentProxyConfig) GetDialedDirectly() bool {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.AccessLogsConfig
+// target=github.com/hernad/consul/agent/structs.AccessLogsConfig
 // output=service.gen.go
 // name=Structs
 type AccessLogsConfig struct {
@@ -913,7 +913,7 @@ func (x *AccessLogsConfig) GetTextFormat() string {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.ServiceDefinition
+// target=github.com/hernad/consul/agent/structs.ServiceDefinition
 // output=service.gen.go
 // name=Structs
 type ServiceDefinition struct {

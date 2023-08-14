@@ -167,7 +167,7 @@ export default class PermissionService extends RepositoryService {
     // Temporarily revert to pre-1.10 UI functionality by overwriting frontend
     // permissions. These are used to hide certain UI elements, but they are
     // still enforced on the backend.
-    // This temporary measure should be removed again once https://github.com/hashicorp/consul/issues/11098
+    // This temporary measure should be removed again once https://github.com/hernad/consul/issues/11098
     // has been resolved
     this.permissions.forEach((item) => {
       if (['key', 'node', 'service', 'intention', 'session'].includes(item.Resource)) {

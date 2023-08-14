@@ -2,7 +2,7 @@
 
 This section is still a work in progress.
 
-[agent/checks](https://github.com/hashicorp/consul/tree/main/agent/checks) contains the logic for
+[agent/checks](https://github.com/hernad/consul/tree/main/agent/checks) contains the logic for
 performing active [health checking](https://www.consul.io/docs/agent/checks.html).
 
 
@@ -31,7 +31,7 @@ be reviewed and tested.
 8. API [/v1/txn](https://www.consul.io/api-docs/txn) - the `Transaction` API allows for registering a check.
 
 
-[agent/catalog_endpoint.go]: https://github.com/hashicorp/consul/blob/main/agent/catalog_endpoint.go
-[agent/agent_endpoint.go]: https://github.com/hashicorp/consul/blob/main/agent/agent_endpoint.go
-[agent/config/config.go]: https://github.com/hashicorp/consul/blob/main/agent/config/config.go
-[command/services/config.go]: https://github.com/hashicorp/consul/blob/main/command/services/config.go
+[agent/catalog_endpoint.go]: https://github.com/hernad/consul/blob/main/agent/catalog_endpoint.go
+[agent/agent_endpoint.go]: https://github.com/hernad/consul/blob/main/agent/agent_endpoint.go
+[agent/config/config.go]: https://github.com/hernad/consul/blob/main/agent/config/config.go
+[command/services/config.go]: https://github.com/hernad/consul/blob/main/command/services/config.go

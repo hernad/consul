@@ -149,7 +149,7 @@ func (x *CheckServiceNode) GetChecks() []*HealthCheck {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.Node
+// target=github.com/hernad/consul/agent/structs.Node
 // output=node.gen.go
 // name=Structs
 type Node struct {
@@ -279,7 +279,7 @@ func (x *Node) GetLocality() *pbcommon.Locality {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/agent/structs.NodeService
+// target=github.com/hernad/consul/agent/structs.NodeService
 // output=node.gen.go
 // name=Structs
 type NodeService struct {

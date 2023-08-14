@@ -863,7 +863,7 @@ type ValidateConfigUpdater interface {
 	// ValidateConfigUpdate should return an error if the next configuration is
 	// incompatible with the previous configuration.
 	//
-	// TODO: use better types after https://github.com/hashicorp/consul/issues/12238
+	// TODO: use better types after https://github.com/hernad/consul/issues/12238
 	ValidateConfigUpdate(previous, next map[string]interface{}) error
 }
 

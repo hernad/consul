@@ -291,7 +291,7 @@ func (x *PeeringSecrets) GetStream() *PeeringSecrets_Stream {
 //
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/api.Peering
+// target=github.com/hernad/consul/api.Peering
 // output=peering.gen.go
 // name=API
 type Peering struct {
@@ -482,7 +482,7 @@ func (x *Peering) GetManualServerAddresses() []string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/api.PeeringRemoteInfo
+// target=github.com/hernad/consul/api.PeeringRemoteInfo
 // output=peering.gen.go
 // name=API
 type RemoteInfo struct {
@@ -1697,7 +1697,7 @@ func (*PeeringTrustBundleDeleteResponse) Descriptor() ([]byte, []int) {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/api.PeeringGenerateTokenRequest
+// target=github.com/hernad/consul/api.PeeringGenerateTokenRequest
 // output=peering.gen.go
 // name=API
 type GenerateTokenRequest struct {
@@ -1779,7 +1779,7 @@ func (x *GenerateTokenRequest) GetServerExternalAddresses() []string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/api.PeeringGenerateTokenResponse
+// target=github.com/hernad/consul/api.PeeringGenerateTokenResponse
 // output=peering.gen.go
 // name=API
 type GenerateTokenResponse struct {
@@ -1833,7 +1833,7 @@ func (x *GenerateTokenResponse) GetPeeringToken() string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/api.PeeringEstablishRequest
+// target=github.com/hernad/consul/api.PeeringEstablishRequest
 // output=peering.gen.go
 // name=API
 type EstablishRequest struct {
@@ -1913,7 +1913,7 @@ func (x *EstablishRequest) GetMeta() map[string]string {
 
 // mog annotation:
 //
-// target=github.com/hashicorp/consul/api.PeeringEstablishResponse
+// target=github.com/hernad/consul/api.PeeringEstablishResponse
 // output=peering.gen.go
 // name=API
 type EstablishResponse struct {

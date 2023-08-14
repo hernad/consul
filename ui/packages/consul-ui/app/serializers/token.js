@@ -29,7 +29,7 @@ export default class TokenSerializer extends Serializer.extend(WithPolicies, Wit
     // make sure we never send the SecretID
     // TODO: If we selectively format the request payload in the adapter we
     // won't have to do this here see side note in
-    // https://github.com/hashicorp/consul/pull/6285 which will mean most if
+    // https://github.com/hernad/consul/pull/6285 which will mean most if
     // not all of this method can go
     if (data) {
       delete data['SecretID'];

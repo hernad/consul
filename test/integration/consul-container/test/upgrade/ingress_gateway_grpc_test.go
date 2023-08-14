@@ -55,7 +55,7 @@ func TestIngressGateway_GRPC_UpgradeToTarget_fromLatest(t *testing.T) {
 	require.NoError(t, err)
 
 	// these must be one of the externally-mapped ports from
-	// https://github.com/hashicorp/consul/blob/c5e729e86576771c4c22c6da1e57aaa377319323/test/integration/consul-container/libs/cluster/container.go#L521-L525
+	// https://github.com/hernad/consul/blob/c5e729e86576771c4c22c6da1e57aaa377319323/test/integration/consul-container/libs/cluster/container.go#L521-L525
 	const portS1DirectNoTLS = 8080
 	require.NoError(t, cluster.ConfigEntryWrite(&api.IngressGatewayConfigEntry{
 		Kind: api.IngressGateway,

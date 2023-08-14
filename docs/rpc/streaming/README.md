@@ -31,12 +31,12 @@ endpoint calls raft.Apply, which if successful will save the new data in the sta
 When the [state.Store commits] it produces an event which is managed by the [EventPublisher]
 and sent to any active subscriptions.
 
-[rpcclient/health.Health]: https://github.com/hashicorp/consul/blob/main/agent/rpcclient/health/health.go
-[StreamingHealthServices cache-type]: https://github.com/hashicorp/consul/blob/main/agent/cache-types/streaming_health_services.go
-[materialized view]: https://github.com/hashicorp/consul/blob/main/agent/submatview/materializer.go
-[SubscribeEndpoint]: https://github.com/hashicorp/consul/blob/main/agent/grpc-internal/services/subscribe/subscribe.go
-[EventPublisher]: https://github.com/hashicorp/consul/blob/main/agent/consul/stream/event_publisher.go
-[state.Store commits]: https://github.com/hashicorp/consul/blob/main/agent/consul/state/memdb.go
+[rpcclient/health.Health]: https://github.com/hernad/consul/blob/main/agent/rpcclient/health/health.go
+[StreamingHealthServices cache-type]: https://github.com/hernad/consul/blob/main/agent/cache-types/streaming_health_services.go
+[materialized view]: https://github.com/hernad/consul/blob/main/agent/submatview/materializer.go
+[SubscribeEndpoint]: https://github.com/hernad/consul/blob/main/agent/grpc-internal/services/subscribe/subscribe.go
+[EventPublisher]: https://github.com/hernad/consul/blob/main/agent/consul/stream/event_publisher.go
+[state.Store commits]: https://github.com/hernad/consul/blob/main/agent/consul/state/memdb.go
 
 
 ## Event Publisher

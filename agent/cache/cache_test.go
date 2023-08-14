@@ -88,7 +88,7 @@ func TestCacheGet_initError(t *testing.T) {
 }
 
 // Test a cached error is replaced by a successful result. See
-// https://github.com/hashicorp/consul/issues/4480
+// https://github.com/hernad/consul/issues/4480
 func TestCacheGet_cachedErrorsDontStick(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")

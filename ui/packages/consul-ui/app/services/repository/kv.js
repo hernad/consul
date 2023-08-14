@@ -77,7 +77,7 @@ export default class KvService extends RepositoryService {
     /**/
     // Temporarily revert to pre-1.10 UI functionality by not pre-checking backend
     // permissions.
-    // This temporary measure should be removed again once https://github.com/hashicorp/consul/issues/11098
+    // This temporary measure should be removed again once https://github.com/hernad/consul/issues/11098
     // has been resolved
 
     // return this.authorizeBySlug(

@@ -25,7 +25,7 @@ export default function (config = {}, win = window, doc = document) {
     };
 
     // Define the function that reads in "Scenarios", parse and set cookies and set theme if specified.
-    // See https://github.com/hashicorp/consul/blob/main/ui/packages/consul-ui/docs/bookmarklets.mdx
+    // See https://github.com/hernad/consul/blob/main/ui/packages/consul-ui/docs/bookmarklets.mdx
     win['Scenario'] = function (str = '') {
       if (str.length > 0) {
         cookies(str).forEach((item) => {

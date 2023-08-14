@@ -5,7 +5,7 @@ version: v1
 managed:
   enabled: true
   go_package_prefix:
-    default: github.com/hashicorp/consul/agent/grpc-middleware/testutil/testservice
+    default: github.com/hernad/consul/agent/grpc-middleware/testutil/testservice
 plugins:
   - name: go
     out: .

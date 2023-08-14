@@ -1775,7 +1775,7 @@ func (s *delegateConfigReloadShim) ReloadConfig(cfg consul.ReloadableConfig) err
 }
 
 // TestAgent_ReloadDoesNotTriggerWatch Ensure watches not triggered after reload
-// see https://github.com/hashicorp/consul/issues/7446
+// see https://github.com/hernad/consul/issues/7446
 func TestAgent_ReloadDoesNotTriggerWatch(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")
@@ -2613,7 +2613,7 @@ func TestAgent_RegisterCheck_UDP(t *testing.T) {
 }
 
 // This verifies all the forms of the new args-style check that we need to
-// support as a result of https://github.com/hashicorp/consul/issues/3587.
+// support as a result of https://github.com/hernad/consul/issues/3587.
 func TestAgent_RegisterCheck_Scripts(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")
@@ -7064,7 +7064,7 @@ func TestAgentConnectCALeafCert_goodNotLocal(t *testing.T) {
 		require.Equal(t, issued, issued2)
 	}
 
-	// Test Blocking - see https://github.com/hashicorp/consul/issues/4462
+	// Test Blocking - see https://github.com/hernad/consul/issues/4462
 	{
 		// Fetch it again
 		resp := httptest.NewRecorder()
@@ -7116,7 +7116,7 @@ func TestAgentConnectCALeafCert_goodNotLocal(t *testing.T) {
 }
 
 func TestAgentConnectCALeafCert_nonBlockingQuery_after_blockingQuery_shouldNotBlock(t *testing.T) {
-	// see: https://github.com/hashicorp/consul/issues/12048
+	// see: https://github.com/hernad/consul/issues/12048
 
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")

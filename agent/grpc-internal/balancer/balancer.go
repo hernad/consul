@@ -17,7 +17,7 @@
 // will attempt to remain connected to the same server as long its address is
 // returned by the resolver - we previously had to work around this behavior in
 // order to shuffle the servers, which had some unfortunate side effects as
-// documented in this issue: https://github.com/hashicorp/consul/issues/10603.
+// documented in this issue: https://github.com/hernad/consul/issues/10603.
 //
 // If a server is in a perpetually bad state, the balancer's standard error
 // handling will steer away from it but it will *not* be removed from the set

@@ -462,7 +462,7 @@ RETRY_ONCE:
 
 	// TODO: The NodeServices object in IndexedNodeServices is a pointer to
 	// something that's created for each request by the state store way down
-	// in https://github.com/hashicorp/consul/blob/v1.0.4/agent/consul/state/catalog.go#L953-L963.
+	// in https://github.com/hernad/consul/blob/v1.0.4/agent/consul/state/catalog.go#L953-L963.
 	// Since this isn't a pointer to a real state store object, it's safe to
 	// modify out.NodeServices.Services in the loop below without making a
 	// copy here. Same for the Tags in each service entry, since that was

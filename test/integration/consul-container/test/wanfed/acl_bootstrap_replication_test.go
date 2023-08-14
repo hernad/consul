@@ -51,7 +51,7 @@ func retryFunc[T any](t *testing.T, f func() (T, error)) T {
 //   - Validate ACL replication by creating a token
 //     and checking it is found in each datacenter.
 //
-// Added to validate this issue: https://github.com/hashicorp/consul/issues/16620
+// Added to validate this issue: https://github.com/hernad/consul/issues/16620
 func TestWanFed_ReplicationBootstrap(t *testing.T) {
 	cfgFunc := func(c *libcluster.ConfigBuilder) {
 		c.Set("primary_datacenter", "primary")

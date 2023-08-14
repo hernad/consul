@@ -1266,7 +1266,7 @@ func TestStateStore_EnsureNode(t *testing.T) {
 	}
 
 	// All the remaining tests are deprecated, please remove them on next Consul major release
-	// See https://github.com/hashicorp/consul/pull/3983 for context
+	// See https://github.com/hernad/consul/pull/3983 for context
 
 	// Deprecated behavior is following
 	deprecatedEnsureNodeWithoutIDCanRegister(t, s, "new-node-without-id", 13)
@@ -3978,7 +3978,7 @@ func TestStateStore_ConnectQueryBlocking(t *testing.T) {
 			wantAfterWatchSetSize: 3,
 		},
 		{
-			// See https://github.com/hashicorp/consul/issues/5506. The issue is cause
+			// See https://github.com/hernad/consul/issues/5506. The issue is cause
 			// if the target service exists and is registered meaning it has a
 			// service-specific index. This index is then used for the connect query
 			// even though it is not updated by changes to the actual proxy or it's
@@ -4008,7 +4008,7 @@ func TestStateStore_ConnectQueryBlocking(t *testing.T) {
 			wantAfterWatchSetSize: 3,
 		},
 		{
-			// See https://github.com/hashicorp/consul/issues/5506. This is the edge
+			// See https://github.com/hernad/consul/issues/5506. This is the edge
 			// case that the simple solution wouldn't catch.
 			name: "unblocks on different service name proxy-service registration when service is present",
 			setupFn: func(s *Store) {
